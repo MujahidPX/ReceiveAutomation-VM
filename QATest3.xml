@@ -1,0 +1,28 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MailRoom2.Automation QATest3">	
+	<listeners>
+		<listener class-name="Reporting.EReport" />
+		<listener class-name="RetryListener.RetryListener"/>
+	</listeners>
+	
+	<test name="SignInOptions_EnableMagicLink">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Settings"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests">
+			<methods>
+				<include name="PreviewCustomize"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+</suite>

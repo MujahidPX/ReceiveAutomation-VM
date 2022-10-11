@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [MailRoom2.Automation QA2]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Reporting.EReport"/>
+  </listeners>
+  <test thread-count="5" name="LoginViaMagicLink(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="QA"/>
+    <groups>
+      <run>
+        <include name="Locations"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="SiteTestCases.LocationsTests.LocationsPageTests">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="initPageObjectClass1"/>
+          <include name="SendEmailReport"/>
+          <include name="EditLocation" invocation-numbers="0"/>
+          <include name="initDriver"/>
+          <include name="initPageObjectClass3"/>
+          <include name="initPageObjectClass2"/>
+          <include name="initPageObjectClass"/>
+        </methods>
+      </class> <!-- SiteTestCases.LocationsTests.LocationsPageTests -->
+    </classes>
+  </test> <!-- LoginViaMagicLink(failed) -->
+</suite> <!-- Failed suite [MailRoom2.Automation QA2] -->

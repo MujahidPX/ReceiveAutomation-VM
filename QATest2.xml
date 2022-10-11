@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MailRoom2.Automation QATest2">	
+	<listeners>
+		<listener class-name="Reporting.EReport" />
+		<listener class-name="RetryListener.RetryListener"/>
+	</listeners>
+	
+	<test name="AddPaymentMethod">
+		<parameter name="url"
+			value="QA" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Settings"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests">
+			<methods>
+				<include name="UpgradePlan"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+</suite>

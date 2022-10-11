@@ -1,0 +1,398 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MailRoom2.Automation UAT">
+	<listeners>
+		<listener class-name="Reporting.EReport" />
+	</listeners>
+
+	<test name="LoginNegativeCase">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Login"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="LoginNegativeCase"/>
+				<!-- include name="LoginViaMagicLink"/ -->
+				<!-- include name="ForgotPassword"/ -->
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="LoginViaMagicLink">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Login"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="LoginViaMagicLink"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="ForgotPassword">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Login"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="ForgotPassword"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="AddNewAdmin">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Users"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="AddNewAdminUser"/>
+				<!-- include name="LoginManager"/ -->
+				<!-- include name="LoginOperator"/ -->
+				<!-- exclude name="LoginAdmin"/ -->
+			</methods>
+			</class>
+			<!-- class name="SiteTestCases.UsersTests.UsersPageTests"/ -->									
+			<!-- class name="SiteTestCases.LocationsTests.LocationsPageTests"/ -->
+			<!-- class name="SiteTestCases.RecipientsTests.RecipientsPageTests"/ -->			
+		</classes>
+	</test>
+	
+	<test name="AddNewManager">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Users"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="AddNewManagerUser"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="AddNewOperator">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Users"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="AddNewOperatorUser"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="AddNewAdminUserFiltersSorting">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Users"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="AddNewAdminUserFiltersSorting"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<!-- test name="CreateNewLocation">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Locations"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="CreateNewLocation"/>
+			</methods>
+			</class>			
+		</classes>
+	</ test -->  
+	
+	<test name="AddNewRecipient">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Recipients"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="AddNewRecipient"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="AddNewGroup">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Groups"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="AddNewGroup"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVUPMerge">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="UploadCSVUPMerge"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVUPOverwrite">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="UploadCSVUPOverwrite"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVInvalidEmail">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="UploadCSVInvalidEmail"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVDuplicateEmail">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="UploadCSVDuplicateEmail"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVNameEmailMissing">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="UploadCSVNameEmailMissing"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVEmailMissing">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="UploadCSVEmailMissing"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVLongAdress">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="UploadCSVLongAdress"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVUpdateMerge">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="locationSearched" value="@Optional"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="UploadCSVUpdateMerge"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVEditUploadMerge">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="locationSearched" value="@Optional"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="UploadCSVEditUploadMerge"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVUnitGroup">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="locationSearched" value="@Optional"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="UploadCSVUnitGroup"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="Analytics">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Analytics"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UATTests.UATTestsPage">
+			<methods>
+				<include name="Analytics"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+</suite>

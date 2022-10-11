@@ -1,0 +1,632 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MailRoom2.Automation QA">
+	<listeners>
+		<listener class-name="Reporting.EReport" />
+	</listeners>
+
+	<test name="LoginNegativeCase">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Login"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.LoginTests.LoginPageTests">
+			<methods>
+				<include name="LoginNegativeCase"/>
+				<!-- include name="LoginViaMagicLink"/ -->
+				<!-- include name="ForgotPassword"/ -->
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="LoginViaMagicLink">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Login"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.LoginTests.LoginPageTests">
+			<methods>
+				<include name="LoginViaMagicLink"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="ForgotPassword">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Login"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.LoginTests.LoginPageTests">
+			<methods>
+				<include name="ForgotPassword"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+
+	<test name="AddNewAdmin">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Users"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UsersTests.UsersPageTests">
+			<methods>
+				<include name="AddNewAdminUser"/>
+				<!-- include name="LoginManager"/ -->
+				<!-- include name="LoginOperator"/ -->
+				<!-- exclude name="LoginAdmin"/ -->
+			</methods>
+			</class>
+			<!-- class name="SiteTestCases.UsersTests.UsersPageTests"/ -->									
+			<!-- class name="SiteTestCases.LocationsTests.LocationsPageTests"/ -->
+			<!-- class name="SiteTestCases.RecipientsTests.RecipientsPageTests"/ -->			
+		</classes>
+	</test>
+	
+	<test name="AddNewManager">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Users"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UsersTests.UsersPageTests">
+			<methods>
+				<include name="AddNewManagerUser"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="AddNewOperator">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Users"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UsersTests.UsersPageTests">
+			<methods>
+				<include name="AddNewOperatorUser"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="AddNewAdminUserFiltersSorting">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Users"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UsersTests.UsersPageTests">
+			<methods>
+				<include name="AddNewAdminUserFiltersSorting"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<!-- test name="CreateNewLocation">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Locations"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.LocationsTests.LocationsPageTests">
+			<methods>
+				<include name="CreateNewLocation"/>
+			</methods>
+			</class>			
+		</classes>
+	</test -->
+	
+	<test name="AddNewRecipient">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Recipients"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="AddNewRecipient"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="AddNewGroup">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Groups"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="AddNewGroup"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVUPMerge">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVUPMerge"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVUPOverwrite">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVUPOverwrite"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVInvalidEmail">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVInvalidEmail"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVDuplicateEmail">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVDuplicateEmail"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVNameEmailMissing">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVNameEmailMissing"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVEmailMissing">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVEmailMissing"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVLongAdress">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVLongAdress"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVUpdateMerge">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="locationSearched" value="@Optional"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVUpdateMerge"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVEditUploadMerge">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="locationSearched" value="@Optional"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVEditUploadMerge"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVUnitGroup">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="locationSearched" value="@Optional"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVUnitGroup"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="Analytics">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Analytics"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.AnalyticsTests.AnalyticsPageTests">
+			<methods>
+				<include name="Analytics"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="GlobalSearch">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Analytics"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.AnalyticsTests.AnalyticsPageTests">
+			<methods>
+				<include name="GlobalSearch"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="SignInOptions_EnableMagicLink">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Settings"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.SettingsTests.CompanyManagementTests.CompanyManagementTestsPage">
+			<methods>
+				<include name="SignInOptions_EnableMagicLink"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="AddPaymentMethod">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Settings"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests">
+			<methods>
+				<include name="AddPaymentMethod"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="EstimatedAnnualScans">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Settings"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests">
+			<methods>
+				<include name="EstimatedAnnualScans"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+		
+	<test name="UpgradePlan">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Settings"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests">
+			<methods>
+				<include name="UpgradePlan"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="PayWithCard_TC">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Settings"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests">
+			<methods>
+				<include name="PayWithCard_TC"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>	
+	
+	<test name="CreateNewWorkflow">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Settings"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests">
+			<methods>
+				<include name="CreateNewWorkflow"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>	
+	
+	<!-- test name="CustomizeAWorflow">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Settings"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests">
+			<methods>
+				<include name="CustomizeAWorflow"/>
+			</methods>
+			</class>			
+		</classes>
+	</test -->	
+	
+	<test name="CustomizeTemplates">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Settings"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests">
+			<methods>
+				<include name="CustomizeTemplates"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>	
+	
+	<test name="PreviewCustomize">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Settings"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests">
+			<methods>
+				<include name="PreviewCustomize"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>	
+	
+	<test name="GenerateAPIKey">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Settings"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage">
+			<methods>
+				<include name="GenerateAPIKey"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>	
+	
+	<test name="GenerateLabelOCRAPIKey">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Settings"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage">
+			<methods>
+				<include name="GenerateLabelOCRAPIKey"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>	
+	
+	<test name="CreateWebhooks">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Settings"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage">
+			<methods>
+				<include name="CreateWebhooks"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>	
+	
+</suite>

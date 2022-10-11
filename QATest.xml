@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MailRoom2.Automation QATest">
+	<listeners>
+		<listener class-name="Reporting.EReport" />
+	</listeners>
+	
+	<test name="AddNewRecipient">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Recipients"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.SignUpTests.SignUpPageTests">
+			<methods>
+				<include name="CreateAnAccount"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+
+</suite>

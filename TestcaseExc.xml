@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MailRoom2.Automation TestCaseExc">
+	<listeners>
+		<listener class-name="Reporting.EReport" />
+        <!-- listener class-name="RerunFailTests.AnnotationTransformer.AnnotationTransformer"/ -->
+        <listener class-name="RetryListener.RetryListener"/>
+	</listeners>
+	
+	<test name="LoginViaMagicLink">
+		<parameter name="url"
+			value="QA" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Locations"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UsersTests.UsersPageTests">
+			<methods>
+				<include name="AddNewOperatorUser"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+
+</suite>

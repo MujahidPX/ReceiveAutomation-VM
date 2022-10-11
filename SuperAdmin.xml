@@ -1,0 +1,281 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MailRoom2.Automation SuperAdmin">
+	<listeners>
+		<listener class-name="Reporting.EReport" />
+	</listeners>
+
+	<test name="SuperAdminAddNewAdminUser">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Users"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UsersTests.UsersPageTests">
+			<methods>
+				<include name="SuperAdminAddNewAdminUser"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="SuperAdminAddNewManagerUser">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Users"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UsersTests.UsersPageTests">
+			<methods>
+				<include name="SuperAdminAddNewManagerUser"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="SuperAdminAddNewOperatorUser">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Users"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.UsersTests.UsersPageTests">
+			<methods>
+				<include name="SuperAdminAddNewOperatorUser"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="SuperAdminCreateNewLocation">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Users"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.LocationsTests.LocationsPageTests">
+			<methods>
+				<include name="SuperAdminCreateNewLocation"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="SuperAdminAddNewRecipient">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Recipients"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="SuperAdminAddNewRecipient"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="SuperAdminAddNewGroup">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="Groups"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="SuperAdminAddNewGroup"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="SuperAdminUploadCSVMerge">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="SuperAdminUploadCSVMerge"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="SuperAdminUploadCSVOverwrite">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="SuperAdminUploadCSVOverwrite"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="SuperAdminUploadCSVInvalidEmail">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="SuperAdminUploadCSVInvalidEmail"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="SuperAdminUploadCSVDuplicateEmail">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="SuperAdminUploadCSVDuplicateEmail"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="SuperAdminUploadCSVEmailMissing">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="SuperAdminUploadCSVEmailMissing"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="SuperAdminUploadCSVLongAdress">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="SuperAdminUploadCSVLongAdress"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="SuperAdminUploadCSVUpdateMerge">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="locationSearched" value="@Optional"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="SuperAdminUploadCSVUpdateMerge"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="SuperAdminUploadCSVEditUploadMerge">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="locationSearched" value="@Optional"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="SuperAdminUploadCSVEditUploadMerge"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="SuperAdminUploadCSVNameEmailMissing">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="SuperAdminUploadCSVNameEmailMissing"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+
+</suite>

@@ -1,0 +1,2044 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="430" total="462" passed="32" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-11T10:35:55 PKT" name="MailRoom2.Automation QA" finished-at="2022-10-11T11:28:46 PKT" duration-ms="3170802">
+    <groups>
+      <group name="Recipients">
+        <method signature="RecipientsPageTests.AddNewRecipient(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@50378a4]" name="AddNewRecipient" class="SiteTestCases.RecipientsTests.RecipientsPageTests"/>
+      </group> <!-- Recipients -->
+      <group name="Workflows">
+        <method signature="WorkflowsPageTests.CreateNewWorkflow(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@5be1d0a4]" name="CreateNewWorkflow" class="SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests"/>
+        <method signature="WorkflowsPageTests.CustomizeTemplates(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@15d49048]" name="CustomizeTemplates" class="SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests"/>
+        <method signature="WorkflowsPageTests.PreviewCustomize(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@17503f6b]" name="PreviewCustomize" class="SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests"/>
+      </group> <!-- Workflows -->
+      <group name="UploadCSV">
+        <method signature="RecipientsPageTests.UploadCSVUPMerge(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@16150369]" name="UploadCSVUPMerge" class="SiteTestCases.RecipientsTests.RecipientsPageTests"/>
+        <method signature="RecipientsPageTests.UploadCSVUPOverwrite(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@23f5b5dc]" name="UploadCSVUPOverwrite" class="SiteTestCases.RecipientsTests.RecipientsPageTests"/>
+        <method signature="RecipientsPageTests.UploadCSVInvalidEmail(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@5db6b9cd]" name="UploadCSVInvalidEmail" class="SiteTestCases.RecipientsTests.RecipientsPageTests"/>
+        <method signature="RecipientsPageTests.UploadCSVDuplicateEmail(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1be2019a]" name="UploadCSVDuplicateEmail" class="SiteTestCases.RecipientsTests.RecipientsPageTests"/>
+        <method signature="RecipientsPageTests.UploadCSVNameEmailMissing(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2657d4dd]" name="UploadCSVNameEmailMissing" class="SiteTestCases.RecipientsTests.RecipientsPageTests"/>
+        <method signature="RecipientsPageTests.UploadCSVEmailMissing(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@387a8303]" name="UploadCSVEmailMissing" class="SiteTestCases.RecipientsTests.RecipientsPageTests"/>
+        <method signature="RecipientsPageTests.UploadCSVLongAdress(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@57db2b13]" name="UploadCSVLongAdress" class="SiteTestCases.RecipientsTests.RecipientsPageTests"/>
+        <method signature="RecipientsPageTests.UploadCSVUpdateMerge(java.lang.String,java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1b919693]" name="UploadCSVUpdateMerge" class="SiteTestCases.RecipientsTests.RecipientsPageTests"/>
+        <method signature="RecipientsPageTests.UploadCSVEditUploadMerge(java.lang.String,java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2584b82d]" name="UploadCSVEditUploadMerge" class="SiteTestCases.RecipientsTests.RecipientsPageTests"/>
+        <method signature="RecipientsPageTests.UploadCSVUnitGroup(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@626abbd0]" name="UploadCSVUnitGroup" class="SiteTestCases.RecipientsTests.RecipientsPageTests"/>
+      </group> <!-- UploadCSV -->
+      <group name="MagicLink">
+        <method signature="LoginPageTests.LoginViaMagicLink(java.lang.String)[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@71075444]" name="LoginViaMagicLink" class="SiteTestCases.LoginTests.LoginPageTests"/>
+      </group> <!-- MagicLink -->
+      <group name="Users">
+        <method signature="UsersPageTests.AddNewAdminUser(java.lang.String)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@2a8448fa]" name="AddNewAdminUser" class="SiteTestCases.UsersTests.UsersPageTests"/>
+        <method signature="UsersPageTests.AddNewManagerUser(java.lang.String)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@3ad83a66]" name="AddNewManagerUser" class="SiteTestCases.UsersTests.UsersPageTests"/>
+        <method signature="UsersPageTests.AddNewOperatorUser(java.lang.String)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@5b38c1ec]" name="AddNewOperatorUser" class="SiteTestCases.UsersTests.UsersPageTests"/>
+        <method signature="UsersPageTests.AddNewAdminUserFiltersSorting(java.lang.String)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@f1da57d]" name="AddNewAdminUserFiltersSorting" class="SiteTestCases.UsersTests.UsersPageTests"/>
+      </group> <!-- Users -->
+      <group name="Login">
+        <method signature="LoginPageTests.LoginNegativeCase(java.lang.String)[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5386659f]" name="LoginNegativeCase" class="SiteTestCases.LoginTests.LoginPageTests"/>
+        <method signature="LoginPageTests.LoginViaMagicLink(java.lang.String)[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@71075444]" name="LoginViaMagicLink" class="SiteTestCases.LoginTests.LoginPageTests"/>
+        <method signature="LoginPageTests.ForgotPassword(java.lang.String)[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5c80cf32]" name="ForgotPassword" class="SiteTestCases.LoginTests.LoginPageTests"/>
+      </group> <!-- Login -->
+      <group name="ForgotPassword">
+        <method signature="LoginPageTests.ForgotPassword(java.lang.String)[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5c80cf32]" name="ForgotPassword" class="SiteTestCases.LoginTests.LoginPageTests"/>
+      </group> <!-- ForgotPassword -->
+      <group name="Analytics">
+        <method signature="AnalyticsPageTests.Analytics(java.lang.String)[pri:0, instance:SiteTestCases.AnalyticsTests.AnalyticsPageTests@66ea810]" name="Analytics" class="SiteTestCases.AnalyticsTests.AnalyticsPageTests"/>
+        <method signature="AnalyticsPageTests.GlobalSearch(java.lang.String)[pri:0, instance:SiteTestCases.AnalyticsTests.AnalyticsPageTests@2f953efd]" name="GlobalSearch" class="SiteTestCases.AnalyticsTests.AnalyticsPageTests"/>
+      </group> <!-- Analytics -->
+      <group name="PlanAndBilling">
+        <method signature="PlanAndBillingPageTests.AddPaymentMethod(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@23941fb4]" name="AddPaymentMethod" class="SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests"/>
+        <method signature="PlanAndBillingPageTests.EstimatedAnnualScans(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@1f9f6368]" name="EstimatedAnnualScans" class="SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests"/>
+        <method signature="PlanAndBillingPageTests.UpgradePlan(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@69ee81fc]" name="UpgradePlan" class="SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests"/>
+        <method signature="PlanAndBillingPageTests.PayWithCard_TC(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@29f7cefd]" name="PayWithCard_TC" class="SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests"/>
+      </group> <!-- PlanAndBilling -->
+      <group name="Groups">
+        <method signature="RecipientsPageTests.AddNewGroup(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@7a6d7e92]" name="AddNewGroup" class="SiteTestCases.RecipientsTests.RecipientsPageTests"/>
+      </group> <!-- Groups -->
+      <group name="LoginNegativeTestCase">
+        <method signature="LoginPageTests.LoginNegativeCase(java.lang.String)[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5386659f]" name="LoginNegativeCase" class="SiteTestCases.LoginTests.LoginPageTests"/>
+      </group> <!-- LoginNegativeTestCase -->
+      <group name="SignIn">
+        <method signature="CompanyManagementTestsPage.SignInOptions_EnableMagicLink(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.CompanyManagementTests.CompanyManagementTestsPage@41330d4f]" name="SignInOptions_EnableMagicLink" class="SiteTestCases.SettingsTests.CompanyManagementTests.CompanyManagementTestsPage"/>
+      </group> <!-- SignIn -->
+      <group name="APIandWebhooks">
+        <method signature="APIandWebhooksTestsPage.GenerateAPIKey(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@461ad730]" name="GenerateAPIKey" class="SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage"/>
+        <method signature="APIandWebhooksTestsPage.GenerateLabelOCRAPIKey(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@3e78b6a5]" name="GenerateLabelOCRAPIKey" class="SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage"/>
+        <method signature="APIandWebhooksTestsPage.CreateWebhooks(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@24105dc5]" name="CreateWebhooks" class="SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage"/>
+      </group> <!-- APIandWebhooks -->
+      <group name="Settings">
+        <method signature="CompanyManagementTestsPage.SignInOptions_EnableMagicLink(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.CompanyManagementTests.CompanyManagementTestsPage@41330d4f]" name="SignInOptions_EnableMagicLink" class="SiteTestCases.SettingsTests.CompanyManagementTests.CompanyManagementTestsPage"/>
+        <method signature="PlanAndBillingPageTests.AddPaymentMethod(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@23941fb4]" name="AddPaymentMethod" class="SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests"/>
+        <method signature="PlanAndBillingPageTests.EstimatedAnnualScans(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@1f9f6368]" name="EstimatedAnnualScans" class="SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests"/>
+        <method signature="PlanAndBillingPageTests.UpgradePlan(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@69ee81fc]" name="UpgradePlan" class="SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests"/>
+        <method signature="PlanAndBillingPageTests.PayWithCard_TC(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@29f7cefd]" name="PayWithCard_TC" class="SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests"/>
+        <method signature="WorkflowsPageTests.CreateNewWorkflow(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@5be1d0a4]" name="CreateNewWorkflow" class="SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests"/>
+        <method signature="WorkflowsPageTests.CustomizeTemplates(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@15d49048]" name="CustomizeTemplates" class="SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests"/>
+        <method signature="WorkflowsPageTests.PreviewCustomize(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@17503f6b]" name="PreviewCustomize" class="SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests"/>
+        <method signature="APIandWebhooksTestsPage.GenerateAPIKey(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@461ad730]" name="GenerateAPIKey" class="SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage"/>
+        <method signature="APIandWebhooksTestsPage.GenerateLabelOCRAPIKey(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@3e78b6a5]" name="GenerateLabelOCRAPIKey" class="SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage"/>
+        <method signature="APIandWebhooksTestsPage.CreateWebhooks(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@24105dc5]" name="CreateWebhooks" class="SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage"/>
+      </group> <!-- Settings -->
+    </groups>
+    <test started-at="2022-10-11T10:35:55 PKT" name="LoginNegativeCase" finished-at="2022-10-11T10:36:28 PKT" duration-ms="33141">
+      <class name="SiteTestCases.LoginTests.LoginPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5386659f]" started-at="2022-10-11T10:35:55 PKT" name="initDriver" finished-at="2022-10-11T10:36:01 PKT" duration-ms="6016" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5386659f]" started-at="2022-10-11T10:36:01 PKT" name="initPageObjectClass" finished-at="2022-10-11T10:36:01 PKT" duration-ms="131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5386659f]" started-at="2022-10-11T10:36:01 PKT" name="initPageObjectClass1" finished-at="2022-10-11T10:36:02 PKT" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5386659f]" started-at="2022-10-11T10:36:02 PKT" name="initPageObjectClass2" finished-at="2022-10-11T10:36:02 PKT" duration-ms="36" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method signature="LoginNegativeCase(java.lang.String)[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5386659f]" started-at="2022-10-11T10:36:02 PKT" name="LoginNegativeCase" finished-at="2022-10-11T10:36:28 PKT" duration-ms="26097" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginNegativeCase -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5386659f]" started-at="2022-10-11T10:36:28 PKT" name="tearDown" finished-at="2022-10-11T10:36:28 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginNegativeCase status=SUCCESS method=LoginPageTests.LoginNegativeCase(java.lang.String)[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5386659f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5386659f]" started-at="2022-10-11T10:36:28 PKT" name="closeDriver" finished-at="2022-10-11T10:36:28 PKT" duration-ms="773" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.LoginTests.LoginPageTests -->
+    </test> <!-- LoginNegativeCase -->
+    <test started-at="2022-10-11T10:36:28 PKT" name="LoginViaMagicLink" finished-at="2022-10-11T10:37:01 PKT" duration-ms="32799">
+      <class name="SiteTestCases.LoginTests.LoginPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@71075444]" started-at="2022-10-11T10:36:28 PKT" name="initDriver" finished-at="2022-10-11T10:36:30 PKT" duration-ms="1426" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="LoginViaMagicLink(java.lang.String)[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@71075444]" started-at="2022-10-11T10:36:30 PKT" name="LoginViaMagicLink" finished-at="2022-10-11T10:36:57 PKT" duration-ms="26791" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginViaMagicLink -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@71075444]" started-at="2022-10-11T10:36:30 PKT" name="initPageObjectClass1" finished-at="2022-10-11T10:36:30 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@71075444]" started-at="2022-10-11T10:36:30 PKT" name="initPageObjectClass" finished-at="2022-10-11T10:36:30 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@71075444]" started-at="2022-10-11T10:36:30 PKT" name="initPageObjectClass2" finished-at="2022-10-11T10:36:30 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@71075444]" started-at="2022-10-11T10:36:57 PKT" name="tearDown" finished-at="2022-10-11T10:36:57 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginViaMagicLink status=SUCCESS method=LoginPageTests.LoginViaMagicLink(java.lang.String)[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@71075444] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@71075444]" started-at="2022-10-11T10:36:57 PKT" name="closeDriver" finished-at="2022-10-11T10:37:01 PKT" duration-ms="4581" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.LoginTests.LoginPageTests -->
+    </test> <!-- LoginViaMagicLink -->
+    <test started-at="2022-10-11T10:37:01 PKT" name="ForgotPassword" finished-at="2022-10-11T10:37:47 PKT" duration-ms="45801">
+      <class name="SiteTestCases.LoginTests.LoginPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5c80cf32]" started-at="2022-10-11T10:37:01 PKT" name="initDriver" finished-at="2022-10-11T10:37:03 PKT" duration-ms="1497" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5c80cf32]" started-at="2022-10-11T10:37:03 PKT" name="initPageObjectClass" finished-at="2022-10-11T10:37:03 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5c80cf32]" started-at="2022-10-11T10:37:03 PKT" name="initPageObjectClass1" finished-at="2022-10-11T10:37:03 PKT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5c80cf32]" started-at="2022-10-11T10:37:03 PKT" name="initPageObjectClass2" finished-at="2022-10-11T10:37:03 PKT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method signature="ForgotPassword(java.lang.String)[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5c80cf32]" started-at="2022-10-11T10:37:03 PKT" name="ForgotPassword" finished-at="2022-10-11T10:37:46 PKT" duration-ms="43545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ForgotPassword -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5c80cf32]" started-at="2022-10-11T10:37:46 PKT" name="tearDown" finished-at="2022-10-11T10:37:46 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=ForgotPassword status=SUCCESS method=LoginPageTests.ForgotPassword(java.lang.String)[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5c80cf32] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.LoginTests.LoginPageTests@5c80cf32]" started-at="2022-10-11T10:37:46 PKT" name="closeDriver" finished-at="2022-10-11T10:37:47 PKT" duration-ms="751" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.LoginTests.LoginPageTests -->
+    </test> <!-- ForgotPassword -->
+    <test started-at="2022-10-11T10:37:47 PKT" name="AddNewAdmin" finished-at="2022-10-11T10:40:46 PKT" duration-ms="178535">
+      <class name="SiteTestCases.UsersTests.UsersPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@2a8448fa]" started-at="2022-10-11T10:37:47 PKT" name="initDriver" finished-at="2022-10-11T10:37:49 PKT" duration-ms="1457" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@2a8448fa]" started-at="2022-10-11T10:37:49 PKT" name="initPageObjectClass3" finished-at="2022-10-11T10:37:49 PKT" duration-ms="31" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@2a8448fa]" started-at="2022-10-11T10:37:49 PKT" name="initPageObjectClass" finished-at="2022-10-11T10:37:49 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@2a8448fa]" started-at="2022-10-11T10:37:49 PKT" name="initPageObjectClass1" finished-at="2022-10-11T10:37:49 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@2a8448fa]" started-at="2022-10-11T10:37:49 PKT" name="initPageObjectClass2" finished-at="2022-10-11T10:37:49 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@2a8448fa]" started-at="2022-10-11T10:37:49 PKT" name="initPageObjectClass4" finished-at="2022-10-11T10:37:49 PKT" duration-ms="63" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method signature="AddNewAdminUser(java.lang.String)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@2a8448fa]" started-at="2022-10-11T10:37:49 PKT" name="AddNewAdminUser" finished-at="2022-10-11T10:40:45 PKT" duration-ms="176184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddNewAdminUser -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@2a8448fa]" started-at="2022-10-11T10:40:45 PKT" name="tearDown" finished-at="2022-10-11T10:40:45 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddNewAdminUser status=SUCCESS method=UsersPageTests.AddNewAdminUser(java.lang.String)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@2a8448fa] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@2a8448fa]" started-at="2022-10-11T10:40:45 PKT" name="closeDriver" finished-at="2022-10-11T10:40:46 PKT" duration-ms="798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.UsersTests.UsersPageTests -->
+    </test> <!-- AddNewAdmin -->
+    <test started-at="2022-10-11T10:40:46 PKT" name="AddNewManager" finished-at="2022-10-11T10:46:04 PKT" duration-ms="318192">
+      <class name="SiteTestCases.UsersTests.UsersPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@3ad83a66]" started-at="2022-10-11T10:40:46 PKT" name="initDriver" finished-at="2022-10-11T10:40:48 PKT" duration-ms="2493" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@3ad83a66]" started-at="2022-10-11T10:40:48 PKT" name="initPageObjectClass" finished-at="2022-10-11T10:40:48 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@3ad83a66]" started-at="2022-10-11T10:40:48 PKT" name="initPageObjectClass2" finished-at="2022-10-11T10:40:48 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@3ad83a66]" started-at="2022-10-11T10:40:48 PKT" name="initPageObjectClass3" finished-at="2022-10-11T10:40:48 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@3ad83a66]" started-at="2022-10-11T10:40:48 PKT" name="initPageObjectClass1" finished-at="2022-10-11T10:40:48 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@3ad83a66]" started-at="2022-10-11T10:40:48 PKT" name="initPageObjectClass4" finished-at="2022-10-11T10:40:48 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method signature="AddNewManagerUser(java.lang.String)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@3ad83a66]" started-at="2022-10-11T10:40:48 PKT" name="AddNewManagerUser" finished-at="2022-10-11T10:46:03 PKT" duration-ms="314880" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddNewManagerUser -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@3ad83a66]" started-at="2022-10-11T10:46:03 PKT" name="tearDown" finished-at="2022-10-11T10:46:03 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddNewManagerUser status=SUCCESS method=UsersPageTests.AddNewManagerUser(java.lang.String)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@3ad83a66] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@3ad83a66]" started-at="2022-10-11T10:46:03 PKT" name="closeDriver" finished-at="2022-10-11T10:46:04 PKT" duration-ms="818" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.UsersTests.UsersPageTests -->
+    </test> <!-- AddNewManager -->
+    <test started-at="2022-10-11T10:46:04 PKT" name="AddNewOperator" finished-at="2022-10-11T10:50:07 PKT" duration-ms="242978">
+      <class name="SiteTestCases.UsersTests.UsersPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@5b38c1ec]" started-at="2022-10-11T10:46:04 PKT" name="initDriver" finished-at="2022-10-11T10:46:05 PKT" duration-ms="1409" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@5b38c1ec]" started-at="2022-10-11T10:46:05 PKT" name="initPageObjectClass3" finished-at="2022-10-11T10:46:05 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@5b38c1ec]" started-at="2022-10-11T10:46:05 PKT" name="initPageObjectClass2" finished-at="2022-10-11T10:46:05 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method signature="AddNewOperatorUser(java.lang.String)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@5b38c1ec]" started-at="2022-10-11T10:46:05 PKT" name="AddNewOperatorUser" finished-at="2022-10-11T10:50:06 PKT" duration-ms="240808" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddNewOperatorUser -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@5b38c1ec]" started-at="2022-10-11T10:46:05 PKT" name="initPageObjectClass1" finished-at="2022-10-11T10:46:05 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@5b38c1ec]" started-at="2022-10-11T10:46:05 PKT" name="initPageObjectClass4" finished-at="2022-10-11T10:46:05 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@5b38c1ec]" started-at="2022-10-11T10:46:05 PKT" name="initPageObjectClass" finished-at="2022-10-11T10:46:05 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@5b38c1ec]" started-at="2022-10-11T10:50:06 PKT" name="tearDown" finished-at="2022-10-11T10:50:06 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddNewOperatorUser status=SUCCESS method=UsersPageTests.AddNewOperatorUser(java.lang.String)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@5b38c1ec] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@5b38c1ec]" started-at="2022-10-11T10:50:06 PKT" name="closeDriver" finished-at="2022-10-11T10:50:07 PKT" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.UsersTests.UsersPageTests -->
+    </test> <!-- AddNewOperator -->
+    <test started-at="2022-10-11T10:50:07 PKT" name="AddNewAdminUserFiltersSorting" finished-at="2022-10-11T10:53:12 PKT" duration-ms="185340">
+      <class name="SiteTestCases.UsersTests.UsersPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@f1da57d]" started-at="2022-10-11T10:50:07 PKT" name="initDriver" finished-at="2022-10-11T10:50:08 PKT" duration-ms="1375" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@f1da57d]" started-at="2022-10-11T10:50:08 PKT" name="initPageObjectClass3" finished-at="2022-10-11T10:50:08 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@f1da57d]" started-at="2022-10-11T10:50:08 PKT" name="initPageObjectClass2" finished-at="2022-10-11T10:50:08 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@f1da57d]" started-at="2022-10-11T10:50:08 PKT" name="initPageObjectClass" finished-at="2022-10-11T10:50:08 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method signature="AddNewAdminUserFiltersSorting(java.lang.String)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@f1da57d]" started-at="2022-10-11T10:50:08 PKT" name="AddNewAdminUserFiltersSorting" finished-at="2022-10-11T10:53:11 PKT" duration-ms="183198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddNewAdminUserFiltersSorting -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@f1da57d]" started-at="2022-10-11T10:50:08 PKT" name="initPageObjectClass1" finished-at="2022-10-11T10:50:08 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@f1da57d]" started-at="2022-10-11T10:50:08 PKT" name="initPageObjectClass4" finished-at="2022-10-11T10:50:08 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@f1da57d]" started-at="2022-10-11T10:53:11 PKT" name="tearDown" finished-at="2022-10-11T10:53:11 PKT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddNewAdminUserFiltersSorting status=SUCCESS method=UsersPageTests.AddNewAdminUserFiltersSorting(java.lang.String)[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@f1da57d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.UsersTests.UsersPageTests@f1da57d]" started-at="2022-10-11T10:53:11 PKT" name="closeDriver" finished-at="2022-10-11T10:53:12 PKT" duration-ms="766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.UsersTests.UsersPageTests -->
+    </test> <!-- AddNewAdminUserFiltersSorting -->
+    <test started-at="2022-10-11T10:53:12 PKT" name="AddNewRecipient" finished-at="2022-10-11T10:57:04 PKT" duration-ms="232102">
+      <class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@50378a4]" started-at="2022-10-11T10:53:12 PKT" name="initDriver" finished-at="2022-10-11T10:53:13 PKT" duration-ms="1322" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="AddNewRecipient(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@50378a4]" started-at="2022-10-11T10:53:13 PKT" name="AddNewRecipient" finished-at="2022-10-11T10:57:03 PKT" duration-ms="229946" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddNewRecipient -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@50378a4]" started-at="2022-10-11T10:53:13 PKT" name="initPageObjectClass3" finished-at="2022-10-11T10:53:13 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@50378a4]" started-at="2022-10-11T10:53:13 PKT" name="initPageObjectClass2" finished-at="2022-10-11T10:53:13 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@50378a4]" started-at="2022-10-11T10:53:13 PKT" name="initPageObjectClass1" finished-at="2022-10-11T10:53:13 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@50378a4]" started-at="2022-10-11T10:53:13 PKT" name="initPageObjectClass4" finished-at="2022-10-11T10:53:13 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@50378a4]" started-at="2022-10-11T10:53:13 PKT" name="initPageObjectClass" finished-at="2022-10-11T10:53:13 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@50378a4]" started-at="2022-10-11T10:57:03 PKT" name="tearDown" finished-at="2022-10-11T10:57:03 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddNewRecipient status=SUCCESS method=RecipientsPageTests.AddNewRecipient(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@50378a4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@50378a4]" started-at="2022-10-11T10:57:03 PKT" name="closeDriver" finished-at="2022-10-11T10:57:04 PKT" duration-ms="832" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.RecipientsTests.RecipientsPageTests -->
+    </test> <!-- AddNewRecipient -->
+    <test started-at="2022-10-11T10:57:04 PKT" name="AddNewGroup" finished-at="2022-10-11T11:00:08 PKT" duration-ms="183592">
+      <class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@7a6d7e92]" started-at="2022-10-11T10:57:04 PKT" name="initDriver" finished-at="2022-10-11T10:57:06 PKT" duration-ms="1333" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@7a6d7e92]" started-at="2022-10-11T10:57:06 PKT" name="initPageObjectClass1" finished-at="2022-10-11T10:57:06 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@7a6d7e92]" started-at="2022-10-11T10:57:06 PKT" name="initPageObjectClass3" finished-at="2022-10-11T10:57:06 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method signature="AddNewGroup(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@7a6d7e92]" started-at="2022-10-11T10:57:06 PKT" name="AddNewGroup" finished-at="2022-10-11T10:59:51 PKT" duration-ms="165489" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddNewGroup -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@7a6d7e92]" started-at="2022-10-11T10:57:06 PKT" name="initPageObjectClass" finished-at="2022-10-11T10:57:06 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@7a6d7e92]" started-at="2022-10-11T10:57:06 PKT" name="initPageObjectClass4" finished-at="2022-10-11T10:57:06 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@7a6d7e92]" started-at="2022-10-11T10:57:06 PKT" name="initPageObjectClass2" finished-at="2022-10-11T10:57:06 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@7a6d7e92]" started-at="2022-10-11T10:59:51 PKT" name="tearDown" finished-at="2022-10-11T10:59:51 PKT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddNewGroup status=SUCCESS method=RecipientsPageTests.AddNewGroup(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@7a6d7e92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@7a6d7e92]" started-at="2022-10-11T10:59:51 PKT" name="closeDriver" finished-at="2022-10-11T11:00:08 PKT" duration-ms="16768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.RecipientsTests.RecipientsPageTests -->
+    </test> <!-- AddNewGroup -->
+    <test started-at="2022-10-11T11:00:08 PKT" name="UploadCSVUPMerge" finished-at="2022-10-11T11:01:37 PKT" duration-ms="88824">
+      <class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@16150369]" started-at="2022-10-11T11:00:08 PKT" name="initDriver" finished-at="2022-10-11T11:00:09 PKT" duration-ms="1353" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@16150369]" started-at="2022-10-11T11:00:09 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:00:09 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@16150369]" started-at="2022-10-11T11:00:09 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:00:09 PKT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@16150369]" started-at="2022-10-11T11:00:09 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:00:09 PKT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@16150369]" started-at="2022-10-11T11:00:09 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:00:09 PKT" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@16150369]" started-at="2022-10-11T11:00:09 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:00:09 PKT" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method signature="UploadCSVUPMerge(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@16150369]" started-at="2022-10-11T11:00:09 PKT" name="UploadCSVUPMerge" finished-at="2022-10-11T11:01:36 PKT" duration-ms="86739" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadCSVUPMerge -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@16150369]" started-at="2022-10-11T11:01:36 PKT" name="closeDriver" finished-at="2022-10-11T11:01:37 PKT" duration-ms="712" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@16150369]" started-at="2022-10-11T11:01:36 PKT" name="tearDown" finished-at="2022-10-11T11:01:36 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UploadCSVUPMerge status=SUCCESS method=RecipientsPageTests.UploadCSVUPMerge(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@16150369] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SiteTestCases.RecipientsTests.RecipientsPageTests -->
+    </test> <!-- UploadCSVUPMerge -->
+    <test started-at="2022-10-11T11:01:37 PKT" name="UploadCSVUPOverwrite" finished-at="2022-10-11T11:03:07 PKT" duration-ms="90499">
+      <class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@23f5b5dc]" started-at="2022-10-11T11:01:37 PKT" name="initDriver" finished-at="2022-10-11T11:01:38 PKT" duration-ms="1326" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@23f5b5dc]" started-at="2022-10-11T11:01:38 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:01:38 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method signature="UploadCSVUPOverwrite(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@23f5b5dc]" started-at="2022-10-11T11:01:38 PKT" name="UploadCSVUPOverwrite" finished-at="2022-10-11T11:03:06 PKT" duration-ms="88433" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadCSVUPOverwrite -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@23f5b5dc]" started-at="2022-10-11T11:01:38 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:01:38 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@23f5b5dc]" started-at="2022-10-11T11:01:38 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:01:38 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@23f5b5dc]" started-at="2022-10-11T11:01:38 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:01:38 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@23f5b5dc]" started-at="2022-10-11T11:01:38 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:01:38 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@23f5b5dc]" started-at="2022-10-11T11:03:06 PKT" name="tearDown" finished-at="2022-10-11T11:03:06 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UploadCSVUPOverwrite status=SUCCESS method=RecipientsPageTests.UploadCSVUPOverwrite(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@23f5b5dc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@23f5b5dc]" started-at="2022-10-11T11:03:06 PKT" name="closeDriver" finished-at="2022-10-11T11:03:07 PKT" duration-ms="738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.RecipientsTests.RecipientsPageTests -->
+    </test> <!-- UploadCSVUPOverwrite -->
+    <test started-at="2022-10-11T11:03:07 PKT" name="UploadCSVInvalidEmail" finished-at="2022-10-11T11:05:30 PKT" duration-ms="142654">
+      <class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@5db6b9cd]" started-at="2022-10-11T11:03:07 PKT" name="initDriver" finished-at="2022-10-11T11:03:09 PKT" duration-ms="1355" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@5db6b9cd]" started-at="2022-10-11T11:03:09 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:03:09 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method signature="UploadCSVInvalidEmail(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@5db6b9cd]" started-at="2022-10-11T11:03:09 PKT" name="UploadCSVInvalidEmail" finished-at="2022-10-11T11:05:29 PKT" duration-ms="140572" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadCSVInvalidEmail -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@5db6b9cd]" started-at="2022-10-11T11:03:09 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:03:09 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@5db6b9cd]" started-at="2022-10-11T11:03:09 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:03:09 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@5db6b9cd]" started-at="2022-10-11T11:03:09 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:03:09 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@5db6b9cd]" started-at="2022-10-11T11:03:09 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:03:09 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@5db6b9cd]" started-at="2022-10-11T11:05:29 PKT" name="closeDriver" finished-at="2022-10-11T11:05:30 PKT" duration-ms="726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@5db6b9cd]" started-at="2022-10-11T11:05:29 PKT" name="tearDown" finished-at="2022-10-11T11:05:29 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UploadCSVInvalidEmail status=SUCCESS method=RecipientsPageTests.UploadCSVInvalidEmail(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@5db6b9cd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SiteTestCases.RecipientsTests.RecipientsPageTests -->
+    </test> <!-- UploadCSVInvalidEmail -->
+    <test started-at="2022-10-11T11:05:30 PKT" name="UploadCSVDuplicateEmail" finished-at="2022-10-11T11:07:22 PKT" duration-ms="112187">
+      <class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1be2019a]" started-at="2022-10-11T11:05:30 PKT" name="initDriver" finished-at="2022-10-11T11:05:31 PKT" duration-ms="1486" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1be2019a]" started-at="2022-10-11T11:05:31 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:05:31 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1be2019a]" started-at="2022-10-11T11:05:31 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:05:31 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method signature="UploadCSVDuplicateEmail(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1be2019a]" started-at="2022-10-11T11:05:31 PKT" name="UploadCSVDuplicateEmail" finished-at="2022-10-11T11:07:21 PKT" duration-ms="109971" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadCSVDuplicateEmail -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1be2019a]" started-at="2022-10-11T11:05:31 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:05:31 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1be2019a]" started-at="2022-10-11T11:05:31 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:05:31 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1be2019a]" started-at="2022-10-11T11:05:31 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:05:31 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1be2019a]" started-at="2022-10-11T11:07:21 PKT" name="tearDown" finished-at="2022-10-11T11:07:21 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UploadCSVDuplicateEmail status=SUCCESS method=RecipientsPageTests.UploadCSVDuplicateEmail(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1be2019a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1be2019a]" started-at="2022-10-11T11:07:21 PKT" name="closeDriver" finished-at="2022-10-11T11:07:22 PKT" duration-ms="729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.RecipientsTests.RecipientsPageTests -->
+    </test> <!-- UploadCSVDuplicateEmail -->
+    <test started-at="2022-10-11T11:07:22 PKT" name="UploadCSVNameEmailMissing" finished-at="2022-10-11T11:08:48 PKT" duration-ms="85510">
+      <class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2657d4dd]" started-at="2022-10-11T11:07:22 PKT" name="initDriver" finished-at="2022-10-11T11:07:23 PKT" duration-ms="1452" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2657d4dd]" started-at="2022-10-11T11:07:23 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:07:23 PKT" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2657d4dd]" started-at="2022-10-11T11:07:23 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:07:23 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2657d4dd]" started-at="2022-10-11T11:07:23 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:07:23 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2657d4dd]" started-at="2022-10-11T11:07:23 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:07:23 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2657d4dd]" started-at="2022-10-11T11:07:23 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:07:23 PKT" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method signature="UploadCSVNameEmailMissing(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2657d4dd]" started-at="2022-10-11T11:07:23 PKT" name="UploadCSVNameEmailMissing" finished-at="2022-10-11T11:08:47 PKT" duration-ms="83297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadCSVNameEmailMissing -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2657d4dd]" started-at="2022-10-11T11:08:47 PKT" name="tearDown" finished-at="2022-10-11T11:08:47 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UploadCSVNameEmailMissing status=SUCCESS method=RecipientsPageTests.UploadCSVNameEmailMissing(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2657d4dd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2657d4dd]" started-at="2022-10-11T11:08:47 PKT" name="closeDriver" finished-at="2022-10-11T11:08:48 PKT" duration-ms="736" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.RecipientsTests.RecipientsPageTests -->
+    </test> <!-- UploadCSVNameEmailMissing -->
+    <test started-at="2022-10-11T11:08:48 PKT" name="UploadCSVEmailMissing" finished-at="2022-10-11T11:10:31 PKT" duration-ms="103895">
+      <class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@387a8303]" started-at="2022-10-11T11:08:48 PKT" name="initDriver" finished-at="2022-10-11T11:08:49 PKT" duration-ms="1342" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@387a8303]" started-at="2022-10-11T11:08:49 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:08:49 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@387a8303]" started-at="2022-10-11T11:08:49 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:08:49 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method signature="UploadCSVEmailMissing(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@387a8303]" started-at="2022-10-11T11:08:49 PKT" name="UploadCSVEmailMissing" finished-at="2022-10-11T11:10:31 PKT" duration-ms="101846" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadCSVEmailMissing -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@387a8303]" started-at="2022-10-11T11:08:49 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:08:49 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@387a8303]" started-at="2022-10-11T11:08:49 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:08:49 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@387a8303]" started-at="2022-10-11T11:08:49 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:08:49 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@387a8303]" started-at="2022-10-11T11:10:31 PKT" name="closeDriver" finished-at="2022-10-11T11:10:31 PKT" duration-ms="706" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@387a8303]" started-at="2022-10-11T11:10:31 PKT" name="tearDown" finished-at="2022-10-11T11:10:31 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UploadCSVEmailMissing status=SUCCESS method=RecipientsPageTests.UploadCSVEmailMissing(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@387a8303] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SiteTestCases.RecipientsTests.RecipientsPageTests -->
+    </test> <!-- UploadCSVEmailMissing -->
+    <test started-at="2022-10-11T11:10:31 PKT" name="UploadCSVLongAdress" finished-at="2022-10-11T11:12:12 PKT" duration-ms="100592">
+      <class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@57db2b13]" started-at="2022-10-11T11:10:31 PKT" name="initDriver" finished-at="2022-10-11T11:10:33 PKT" duration-ms="1319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@57db2b13]" started-at="2022-10-11T11:10:33 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:10:33 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@57db2b13]" started-at="2022-10-11T11:10:33 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:10:33 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@57db2b13]" started-at="2022-10-11T11:10:33 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:10:33 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@57db2b13]" started-at="2022-10-11T11:10:33 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:10:33 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method signature="UploadCSVLongAdress(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@57db2b13]" started-at="2022-10-11T11:10:33 PKT" name="UploadCSVLongAdress" finished-at="2022-10-11T11:11:55 PKT" duration-ms="82459" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadCSVLongAdress -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@57db2b13]" started-at="2022-10-11T11:10:33 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:10:33 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@57db2b13]" started-at="2022-10-11T11:11:55 PKT" name="tearDown" finished-at="2022-10-11T11:11:55 PKT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UploadCSVLongAdress status=SUCCESS method=RecipientsPageTests.UploadCSVLongAdress(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@57db2b13] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@57db2b13]" started-at="2022-10-11T11:11:55 PKT" name="closeDriver" finished-at="2022-10-11T11:12:12 PKT" duration-ms="16812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.RecipientsTests.RecipientsPageTests -->
+    </test> <!-- UploadCSVLongAdress -->
+    <test started-at="2022-10-11T11:12:12 PKT" name="UploadCSVUpdateMerge" finished-at="2022-10-11T11:13:37 PKT" duration-ms="84955">
+      <class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1b919693]" started-at="2022-10-11T11:12:12 PKT" name="initDriver" finished-at="2022-10-11T11:12:13 PKT" duration-ms="1304" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1b919693]" started-at="2022-10-11T11:12:13 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:12:13 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1b919693]" started-at="2022-10-11T11:12:13 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:12:13 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1b919693]" started-at="2022-10-11T11:12:13 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:12:13 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1b919693]" started-at="2022-10-11T11:12:13 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:12:13 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1b919693]" started-at="2022-10-11T11:12:13 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:12:13 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method signature="UploadCSVUpdateMerge(java.lang.String,java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1b919693]" started-at="2022-10-11T11:12:13 PKT" name="UploadCSVUpdateMerge" finished-at="2022-10-11T11:13:36 PKT" duration-ms="82944" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[@Optional]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadCSVUpdateMerge -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1b919693]" started-at="2022-10-11T11:13:36 PKT" name="tearDown" finished-at="2022-10-11T11:13:36 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UploadCSVUpdateMerge status=SUCCESS method=RecipientsPageTests.UploadCSVUpdateMerge(java.lang.String,java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1b919693] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@1b919693]" started-at="2022-10-11T11:13:36 PKT" name="closeDriver" finished-at="2022-10-11T11:13:37 PKT" duration-ms="701" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.RecipientsTests.RecipientsPageTests -->
+    </test> <!-- UploadCSVUpdateMerge -->
+    <test started-at="2022-10-11T11:13:37 PKT" name="UploadCSVEditUploadMerge" finished-at="2022-10-11T11:15:18 PKT" duration-ms="100975">
+      <class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2584b82d]" started-at="2022-10-11T11:13:37 PKT" name="initDriver" finished-at="2022-10-11T11:13:38 PKT" duration-ms="1319" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2584b82d]" started-at="2022-10-11T11:13:38 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:13:38 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2584b82d]" started-at="2022-10-11T11:13:38 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:13:38 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method signature="UploadCSVEditUploadMerge(java.lang.String,java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2584b82d]" started-at="2022-10-11T11:13:38 PKT" name="UploadCSVEditUploadMerge" finished-at="2022-10-11T11:15:17 PKT" duration-ms="98924" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[@Optional]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadCSVEditUploadMerge -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2584b82d]" started-at="2022-10-11T11:13:38 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:13:38 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2584b82d]" started-at="2022-10-11T11:13:38 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:13:38 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2584b82d]" started-at="2022-10-11T11:13:38 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:13:38 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2584b82d]" started-at="2022-10-11T11:15:17 PKT" name="tearDown" finished-at="2022-10-11T11:15:17 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UploadCSVEditUploadMerge status=SUCCESS method=RecipientsPageTests.UploadCSVEditUploadMerge(java.lang.String,java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2584b82d] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@2584b82d]" started-at="2022-10-11T11:15:17 PKT" name="closeDriver" finished-at="2022-10-11T11:15:18 PKT" duration-ms="731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.RecipientsTests.RecipientsPageTests -->
+    </test> <!-- UploadCSVEditUploadMerge -->
+    <test started-at="2022-10-11T11:15:18 PKT" name="UploadCSVUnitGroup" finished-at="2022-10-11T11:16:40 PKT" duration-ms="81664">
+      <class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@626abbd0]" started-at="2022-10-11T11:15:18 PKT" name="initDriver" finished-at="2022-10-11T11:15:19 PKT" duration-ms="1240" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@626abbd0]" started-at="2022-10-11T11:15:19 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:15:19 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@626abbd0]" started-at="2022-10-11T11:15:19 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:15:19 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method signature="UploadCSVUnitGroup(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@626abbd0]" started-at="2022-10-11T11:15:19 PKT" name="UploadCSVUnitGroup" finished-at="2022-10-11T11:16:39 PKT" duration-ms="79680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://uat.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UploadCSVUnitGroup -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@626abbd0]" started-at="2022-10-11T11:15:19 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:15:19 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@626abbd0]" started-at="2022-10-11T11:15:19 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:15:19 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@626abbd0]" started-at="2022-10-11T11:15:19 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:15:19 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@626abbd0]" started-at="2022-10-11T11:16:39 PKT" name="tearDown" finished-at="2022-10-11T11:16:39 PKT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UploadCSVUnitGroup status=SUCCESS method=RecipientsPageTests.UploadCSVUnitGroup(java.lang.String)[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@626abbd0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.RecipientsTests.RecipientsPageTests@626abbd0]" started-at="2022-10-11T11:16:39 PKT" name="closeDriver" finished-at="2022-10-11T11:16:40 PKT" duration-ms="742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.RecipientsTests.RecipientsPageTests -->
+    </test> <!-- UploadCSVUnitGroup -->
+    <test started-at="2022-10-11T11:16:40 PKT" name="Analytics" finished-at="2022-10-11T11:18:40 PKT" duration-ms="120704">
+      <class name="SiteTestCases.AnalyticsTests.AnalyticsPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.AnalyticsTests.AnalyticsPageTests@66ea810]" started-at="2022-10-11T11:16:40 PKT" name="initDriver" finished-at="2022-10-11T11:16:41 PKT" duration-ms="1275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.AnalyticsTests.AnalyticsPageTests@66ea810]" started-at="2022-10-11T11:16:41 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:16:41 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.AnalyticsTests.AnalyticsPageTests@66ea810]" started-at="2022-10-11T11:16:41 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:16:41 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.AnalyticsTests.AnalyticsPageTests@66ea810]" started-at="2022-10-11T11:16:41 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:16:41 PKT" duration-ms="65" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method signature="Analytics(java.lang.String)[pri:0, instance:SiteTestCases.AnalyticsTests.AnalyticsPageTests@66ea810]" started-at="2022-10-11T11:16:41 PKT" name="Analytics" finished-at="2022-10-11T11:18:40 PKT" duration-ms="118618" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Analytics -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.AnalyticsTests.AnalyticsPageTests@66ea810]" started-at="2022-10-11T11:18:40 PKT" name="tearDown" finished-at="2022-10-11T11:18:40 PKT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=Analytics status=SUCCESS method=AnalyticsPageTests.Analytics(java.lang.String)[pri:0, instance:SiteTestCases.AnalyticsTests.AnalyticsPageTests@66ea810] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.AnalyticsTests.AnalyticsPageTests@66ea810]" started-at="2022-10-11T11:18:40 PKT" name="closeDriver" finished-at="2022-10-11T11:18:40 PKT" duration-ms="745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.AnalyticsTests.AnalyticsPageTests -->
+    </test> <!-- Analytics -->
+    <test started-at="2022-10-11T11:18:40 PKT" name="GlobalSearch" finished-at="2022-10-11T11:19:21 PKT" duration-ms="40977">
+      <class name="SiteTestCases.AnalyticsTests.AnalyticsPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.AnalyticsTests.AnalyticsPageTests@2f953efd]" started-at="2022-10-11T11:18:40 PKT" name="initDriver" finished-at="2022-10-11T11:18:42 PKT" duration-ms="1355" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.AnalyticsTests.AnalyticsPageTests@2f953efd]" started-at="2022-10-11T11:18:42 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:18:42 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method signature="GlobalSearch(java.lang.String)[pri:0, instance:SiteTestCases.AnalyticsTests.AnalyticsPageTests@2f953efd]" started-at="2022-10-11T11:18:42 PKT" name="GlobalSearch" finished-at="2022-10-11T11:19:21 PKT" duration-ms="38925" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GlobalSearch -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.AnalyticsTests.AnalyticsPageTests@2f953efd]" started-at="2022-10-11T11:18:42 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:18:42 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.AnalyticsTests.AnalyticsPageTests@2f953efd]" started-at="2022-10-11T11:18:42 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:18:42 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.AnalyticsTests.AnalyticsPageTests@2f953efd]" started-at="2022-10-11T11:19:21 PKT" name="tearDown" finished-at="2022-10-11T11:19:21 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=GlobalSearch status=SUCCESS method=AnalyticsPageTests.GlobalSearch(java.lang.String)[pri:0, instance:SiteTestCases.AnalyticsTests.AnalyticsPageTests@2f953efd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.AnalyticsTests.AnalyticsPageTests@2f953efd]" started-at="2022-10-11T11:19:21 PKT" name="closeDriver" finished-at="2022-10-11T11:19:21 PKT" duration-ms="694" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.AnalyticsTests.AnalyticsPageTests -->
+    </test> <!-- GlobalSearch -->
+    <test started-at="2022-10-11T11:19:21 PKT" name="SignInOptions_EnableMagicLink" finished-at="2022-10-11T11:20:22 PKT" duration-ms="60635">
+      <class name="SiteTestCases.SettingsTests.CompanyManagementTests.CompanyManagementTestsPage">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.CompanyManagementTests.CompanyManagementTestsPage@41330d4f]" started-at="2022-10-11T11:19:21 PKT" name="initDriver" finished-at="2022-10-11T11:19:23 PKT" duration-ms="1318" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.SettingsTests.CompanyManagementTests.CompanyManagementTestsPage@41330d4f]" started-at="2022-10-11T11:19:23 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:19:23 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.SettingsTests.CompanyManagementTests.CompanyManagementTestsPage@41330d4f]" started-at="2022-10-11T11:19:23 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:19:23 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.SettingsTests.CompanyManagementTests.CompanyManagementTestsPage@41330d4f]" started-at="2022-10-11T11:19:23 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:19:23 PKT" duration-ms="16" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method signature="SignInOptions_EnableMagicLink(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.CompanyManagementTests.CompanyManagementTestsPage@41330d4f]" started-at="2022-10-11T11:19:23 PKT" name="SignInOptions_EnableMagicLink" finished-at="2022-10-11T11:20:21 PKT" duration-ms="58595" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SignInOptions_EnableMagicLink -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.SettingsTests.CompanyManagementTests.CompanyManagementTestsPage@41330d4f]" started-at="2022-10-11T11:19:23 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:19:23 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.SettingsTests.CompanyManagementTests.CompanyManagementTestsPage@41330d4f]" started-at="2022-10-11T11:19:23 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:19:23 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.SettingsTests.CompanyManagementTests.CompanyManagementTestsPage@41330d4f]" started-at="2022-10-11T11:20:21 PKT" name="closeDriver" finished-at="2022-10-11T11:20:22 PKT" duration-ms="705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.SettingsTests.CompanyManagementTests.CompanyManagementTestsPage@41330d4f]" started-at="2022-10-11T11:20:21 PKT" name="tearDown" finished-at="2022-10-11T11:20:21 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=SignInOptions_EnableMagicLink status=SUCCESS method=CompanyManagementTestsPage.SignInOptions_EnableMagicLink(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.CompanyManagementTests.CompanyManagementTestsPage@41330d4f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SiteTestCases.SettingsTests.CompanyManagementTests.CompanyManagementTestsPage -->
+    </test> <!-- SignInOptions_EnableMagicLink -->
+    <test started-at="2022-10-11T11:20:22 PKT" name="AddPaymentMethod" finished-at="2022-10-11T11:21:11 PKT" duration-ms="49286">
+      <class name="SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@23941fb4]" started-at="2022-10-11T11:20:22 PKT" name="initDriver" finished-at="2022-10-11T11:20:23 PKT" duration-ms="1352" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@23941fb4]" started-at="2022-10-11T11:20:23 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:20:23 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@23941fb4]" started-at="2022-10-11T11:20:23 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:20:23 PKT" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@23941fb4]" started-at="2022-10-11T11:20:23 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:20:23 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass5()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@23941fb4]" started-at="2022-10-11T11:20:23 PKT" name="initPageObjectClass5" finished-at="2022-10-11T11:20:23 PKT" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass5 -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@23941fb4]" started-at="2022-10-11T11:20:23 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:20:23 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@23941fb4]" started-at="2022-10-11T11:20:23 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:20:23 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method signature="AddPaymentMethod(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@23941fb4]" started-at="2022-10-11T11:20:23 PKT" name="AddPaymentMethod" finished-at="2022-10-11T11:21:11 PKT" duration-ms="47181" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddPaymentMethod -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@23941fb4]" started-at="2022-10-11T11:21:11 PKT" name="tearDown" finished-at="2022-10-11T11:21:11 PKT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=AddPaymentMethod status=SUCCESS method=PlanAndBillingPageTests.AddPaymentMethod(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@23941fb4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@23941fb4]" started-at="2022-10-11T11:21:11 PKT" name="closeDriver" finished-at="2022-10-11T11:21:11 PKT" duration-ms="704" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests -->
+    </test> <!-- AddPaymentMethod -->
+    <test started-at="2022-10-11T11:21:11 PKT" name="EstimatedAnnualScans" finished-at="2022-10-11T11:21:44 PKT" duration-ms="32442">
+      <class name="SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@1f9f6368]" started-at="2022-10-11T11:21:11 PKT" name="initDriver" finished-at="2022-10-11T11:21:13 PKT" duration-ms="1302" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@1f9f6368]" started-at="2022-10-11T11:21:13 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:21:13 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method signature="EstimatedAnnualScans(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@1f9f6368]" started-at="2022-10-11T11:21:13 PKT" name="EstimatedAnnualScans" finished-at="2022-10-11T11:21:43 PKT" duration-ms="30412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EstimatedAnnualScans -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@1f9f6368]" started-at="2022-10-11T11:21:13 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:21:13 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@1f9f6368]" started-at="2022-10-11T11:21:13 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:21:13 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@1f9f6368]" started-at="2022-10-11T11:21:13 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:21:13 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@1f9f6368]" started-at="2022-10-11T11:21:13 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:21:13 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass5()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@1f9f6368]" started-at="2022-10-11T11:21:13 PKT" name="initPageObjectClass5" finished-at="2022-10-11T11:21:13 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass5 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@1f9f6368]" started-at="2022-10-11T11:21:43 PKT" name="closeDriver" finished-at="2022-10-11T11:21:44 PKT" duration-ms="727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@1f9f6368]" started-at="2022-10-11T11:21:43 PKT" name="tearDown" finished-at="2022-10-11T11:21:43 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EstimatedAnnualScans status=SUCCESS method=PlanAndBillingPageTests.EstimatedAnnualScans(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@1f9f6368] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests -->
+    </test> <!-- EstimatedAnnualScans -->
+    <test started-at="2022-10-11T11:21:44 PKT" name="UpgradePlan" finished-at="2022-10-11T11:23:06 PKT" duration-ms="82682">
+      <class name="SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@69ee81fc]" started-at="2022-10-11T11:21:44 PKT" name="initDriver" finished-at="2022-10-11T11:21:45 PKT" duration-ms="1404" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@69ee81fc]" started-at="2022-10-11T11:21:45 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:21:45 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@69ee81fc]" started-at="2022-10-11T11:21:45 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:21:45 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@69ee81fc]" started-at="2022-10-11T11:21:45 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:21:45 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass5()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@69ee81fc]" started-at="2022-10-11T11:21:45 PKT" name="initPageObjectClass5" finished-at="2022-10-11T11:21:45 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass5 -->
+        <test-method signature="UpgradePlan(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@69ee81fc]" started-at="2022-10-11T11:21:45 PKT" name="UpgradePlan" finished-at="2022-10-11T11:23:06 PKT" duration-ms="80530" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UpgradePlan -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@69ee81fc]" started-at="2022-10-11T11:21:45 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:21:45 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@69ee81fc]" started-at="2022-10-11T11:21:45 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:21:45 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@69ee81fc]" started-at="2022-10-11T11:23:06 PKT" name="closeDriver" finished-at="2022-10-11T11:23:06 PKT" duration-ms="746" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@69ee81fc]" started-at="2022-10-11T11:23:06 PKT" name="tearDown" finished-at="2022-10-11T11:23:06 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UpgradePlan status=SUCCESS method=PlanAndBillingPageTests.UpgradePlan(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@69ee81fc] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests -->
+    </test> <!-- UpgradePlan -->
+    <test started-at="2022-10-11T11:23:06 PKT" name="PayWithCard_TC" finished-at="2022-10-11T11:23:51 PKT" duration-ms="44986">
+      <class name="SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@29f7cefd]" started-at="2022-10-11T11:23:06 PKT" name="initDriver" finished-at="2022-10-11T11:23:08 PKT" duration-ms="1288" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@29f7cefd]" started-at="2022-10-11T11:23:08 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:23:08 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method signature="PayWithCard_TC(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@29f7cefd]" started-at="2022-10-11T11:23:08 PKT" name="PayWithCard_TC" finished-at="2022-10-11T11:23:35 PKT" duration-ms="26949" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PayWithCard_TC -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@29f7cefd]" started-at="2022-10-11T11:23:08 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:23:08 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@29f7cefd]" started-at="2022-10-11T11:23:08 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:23:08 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@29f7cefd]" started-at="2022-10-11T11:23:08 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:23:08 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@29f7cefd]" started-at="2022-10-11T11:23:08 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:23:08 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass5()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@29f7cefd]" started-at="2022-10-11T11:23:08 PKT" name="initPageObjectClass5" finished-at="2022-10-11T11:23:08 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass5 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@29f7cefd]" started-at="2022-10-11T11:23:35 PKT" name="tearDown" finished-at="2022-10-11T11:23:35 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PayWithCard_TC status=SUCCESS method=PlanAndBillingPageTests.PayWithCard_TC(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@29f7cefd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests@29f7cefd]" started-at="2022-10-11T11:23:35 PKT" name="closeDriver" finished-at="2022-10-11T11:23:51 PKT" duration-ms="16747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests -->
+    </test> <!-- PayWithCard_TC -->
+    <test started-at="2022-10-11T11:23:51 PKT" name="CreateNewWorkflow" finished-at="2022-10-11T11:24:53 PKT" duration-ms="61358">
+      <class name="SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@5be1d0a4]" started-at="2022-10-11T11:23:51 PKT" name="initDriver" finished-at="2022-10-11T11:23:53 PKT" duration-ms="1346" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@5be1d0a4]" started-at="2022-10-11T11:23:53 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:23:53 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@5be1d0a4]" started-at="2022-10-11T11:23:53 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:23:53 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@5be1d0a4]" started-at="2022-10-11T11:23:53 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:23:53 PKT" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@5be1d0a4]" started-at="2022-10-11T11:23:53 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:23:53 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass5()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@5be1d0a4]" started-at="2022-10-11T11:23:53 PKT" name="initPageObjectClass5" finished-at="2022-10-11T11:23:53 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass5 -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@5be1d0a4]" started-at="2022-10-11T11:23:53 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:23:53 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method signature="CreateNewWorkflow(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@5be1d0a4]" started-at="2022-10-11T11:23:53 PKT" name="CreateNewWorkflow" finished-at="2022-10-11T11:24:52 PKT" duration-ms="59269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateNewWorkflow -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@5be1d0a4]" started-at="2022-10-11T11:24:52 PKT" name="tearDown" finished-at="2022-10-11T11:24:52 PKT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CreateNewWorkflow status=SUCCESS method=WorkflowsPageTests.CreateNewWorkflow(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@5be1d0a4] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@5be1d0a4]" started-at="2022-10-11T11:24:52 PKT" name="closeDriver" finished-at="2022-10-11T11:24:53 PKT" duration-ms="709" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests -->
+    </test> <!-- CreateNewWorkflow -->
+    <test started-at="2022-10-11T11:24:53 PKT" name="CustomizeTemplates" finished-at="2022-10-11T11:25:53 PKT" duration-ms="59826">
+      <class name="SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@15d49048]" started-at="2022-10-11T11:24:53 PKT" name="initDriver" finished-at="2022-10-11T11:24:54 PKT" duration-ms="1325" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method signature="CustomizeTemplates(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@15d49048]" started-at="2022-10-11T11:24:54 PKT" name="CustomizeTemplates" finished-at="2022-10-11T11:25:36 PKT" duration-ms="41770" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CustomizeTemplates -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@15d49048]" started-at="2022-10-11T11:24:54 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:24:54 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@15d49048]" started-at="2022-10-11T11:24:54 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:24:54 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@15d49048]" started-at="2022-10-11T11:24:54 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:24:54 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@15d49048]" started-at="2022-10-11T11:24:54 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:24:54 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@15d49048]" started-at="2022-10-11T11:24:54 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:24:54 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass5()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@15d49048]" started-at="2022-10-11T11:24:54 PKT" name="initPageObjectClass5" finished-at="2022-10-11T11:24:54 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass5 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@15d49048]" started-at="2022-10-11T11:25:36 PKT" name="closeDriver" finished-at="2022-10-11T11:25:53 PKT" duration-ms="16730" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@15d49048]" started-at="2022-10-11T11:25:36 PKT" name="tearDown" finished-at="2022-10-11T11:25:36 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CustomizeTemplates status=SUCCESS method=WorkflowsPageTests.CustomizeTemplates(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@15d49048] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests -->
+    </test> <!-- CustomizeTemplates -->
+    <test started-at="2022-10-11T11:25:53 PKT" name="PreviewCustomize" finished-at="2022-10-11T11:26:24 PKT" duration-ms="31925">
+      <class name="SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@17503f6b]" started-at="2022-10-11T11:25:53 PKT" name="initDriver" finished-at="2022-10-11T11:25:54 PKT" duration-ms="1330" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@17503f6b]" started-at="2022-10-11T11:25:54 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:25:54 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@17503f6b]" started-at="2022-10-11T11:25:54 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:25:54 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@17503f6b]" started-at="2022-10-11T11:25:54 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:25:54 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@17503f6b]" started-at="2022-10-11T11:25:54 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:25:54 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@17503f6b]" started-at="2022-10-11T11:25:54 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:25:54 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method is-config="true" signature="initPageObjectClass5()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@17503f6b]" started-at="2022-10-11T11:25:54 PKT" name="initPageObjectClass5" finished-at="2022-10-11T11:25:54 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass5 -->
+        <test-method signature="PreviewCustomize(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@17503f6b]" started-at="2022-10-11T11:25:54 PKT" name="PreviewCustomize" finished-at="2022-10-11T11:26:24 PKT" duration-ms="29861" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PreviewCustomize -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@17503f6b]" started-at="2022-10-11T11:26:24 PKT" name="tearDown" finished-at="2022-10-11T11:26:24 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PreviewCustomize status=SUCCESS method=WorkflowsPageTests.PreviewCustomize(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@17503f6b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests@17503f6b]" started-at="2022-10-11T11:26:24 PKT" name="closeDriver" finished-at="2022-10-11T11:26:24 PKT" duration-ms="729" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests -->
+    </test> <!-- PreviewCustomize -->
+    <test started-at="2022-10-11T11:26:24 PKT" name="GenerateAPIKey" finished-at="2022-10-11T11:27:09 PKT" duration-ms="44880">
+      <class name="SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@461ad730]" started-at="2022-10-11T11:26:24 PKT" name="initDriver" finished-at="2022-10-11T11:26:26 PKT" duration-ms="1362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@461ad730]" started-at="2022-10-11T11:26:26 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:26:26 PKT" duration-ms="15" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@461ad730]" started-at="2022-10-11T11:26:26 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:26:26 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@461ad730]" started-at="2022-10-11T11:26:26 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:26:26 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@461ad730]" started-at="2022-10-11T11:26:26 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:26:26 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@461ad730]" started-at="2022-10-11T11:26:26 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:26:26 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method signature="GenerateAPIKey(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@461ad730]" started-at="2022-10-11T11:26:26 PKT" name="GenerateAPIKey" finished-at="2022-10-11T11:27:09 PKT" duration-ms="42784" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GenerateAPIKey -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@461ad730]" started-at="2022-10-11T11:27:09 PKT" name="tearDown" finished-at="2022-10-11T11:27:09 PKT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=GenerateAPIKey status=SUCCESS method=APIandWebhooksTestsPage.GenerateAPIKey(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@461ad730] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@461ad730]" started-at="2022-10-11T11:27:09 PKT" name="closeDriver" finished-at="2022-10-11T11:27:09 PKT" duration-ms="718" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage -->
+    </test> <!-- GenerateAPIKey -->
+    <test started-at="2022-10-11T11:27:09 PKT" name="GenerateLabelOCRAPIKey" finished-at="2022-10-11T11:27:50 PKT" duration-ms="40687">
+      <class name="SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@3e78b6a5]" started-at="2022-10-11T11:27:09 PKT" name="initDriver" finished-at="2022-10-11T11:27:11 PKT" duration-ms="1316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@3e78b6a5]" started-at="2022-10-11T11:27:11 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:27:11 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@3e78b6a5]" started-at="2022-10-11T11:27:11 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:27:11 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@3e78b6a5]" started-at="2022-10-11T11:27:11 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:27:11 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@3e78b6a5]" started-at="2022-10-11T11:27:11 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:27:11 PKT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@3e78b6a5]" started-at="2022-10-11T11:27:11 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:27:11 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method signature="GenerateLabelOCRAPIKey(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@3e78b6a5]" started-at="2022-10-11T11:27:11 PKT" name="GenerateLabelOCRAPIKey" finished-at="2022-10-11T11:27:49 PKT" duration-ms="38620" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- GenerateLabelOCRAPIKey -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@3e78b6a5]" started-at="2022-10-11T11:27:49 PKT" name="closeDriver" finished-at="2022-10-11T11:27:50 PKT" duration-ms="748" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@3e78b6a5]" started-at="2022-10-11T11:27:49 PKT" name="tearDown" finished-at="2022-10-11T11:27:49 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=GenerateLabelOCRAPIKey status=SUCCESS method=APIandWebhooksTestsPage.GenerateLabelOCRAPIKey(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@3e78b6a5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage -->
+    </test> <!-- GenerateLabelOCRAPIKey -->
+    <test started-at="2022-10-11T11:27:50 PKT" name="CreateWebhooks" finished-at="2022-10-11T11:28:46 PKT" duration-ms="56057">
+      <class name="SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage">
+        <test-method is-config="true" signature="initDriver(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@24105dc5]" started-at="2022-10-11T11:27:50 PKT" name="initDriver" finished-at="2022-10-11T11:27:51 PKT" duration-ms="1390" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method is-config="true" signature="initPageObjectClass2()[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@24105dc5]" started-at="2022-10-11T11:27:51 PKT" name="initPageObjectClass2" finished-at="2022-10-11T11:27:51 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass2 -->
+        <test-method is-config="true" signature="initPageObjectClass3()[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@24105dc5]" started-at="2022-10-11T11:27:51 PKT" name="initPageObjectClass3" finished-at="2022-10-11T11:27:51 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass3 -->
+        <test-method is-config="true" signature="initPageObjectClass4()[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@24105dc5]" started-at="2022-10-11T11:27:51 PKT" name="initPageObjectClass4" finished-at="2022-10-11T11:27:51 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass4 -->
+        <test-method signature="CreateWebhooks(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@24105dc5]" started-at="2022-10-11T11:27:51 PKT" name="CreateWebhooks" finished-at="2022-10-11T11:28:45 PKT" duration-ms="53879" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://qa.portal.packagex.xyz/login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateWebhooks -->
+        <test-method is-config="true" signature="initPageObjectClass()[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@24105dc5]" started-at="2022-10-11T11:27:51 PKT" name="initPageObjectClass" finished-at="2022-10-11T11:27:51 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass -->
+        <test-method is-config="true" signature="initPageObjectClass1()[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@24105dc5]" started-at="2022-10-11T11:27:51 PKT" name="initPageObjectClass1" finished-at="2022-10-11T11:27:51 PKT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initPageObjectClass1 -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@24105dc5]" started-at="2022-10-11T11:28:45 PKT" name="tearDown" finished-at="2022-10-11T11:28:45 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=CreateWebhooks status=SUCCESS method=APIandWebhooksTestsPage.CreateWebhooks(java.lang.String)[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@24105dc5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@24105dc5]" started-at="2022-10-11T11:28:45 PKT" name="closeDriver" finished-at="2022-10-11T11:28:46 PKT" duration-ms="787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="onFinish(org.testng.ITestContext)[pri:0, instance:SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage@24105dc5]" started-at="2022-10-11T11:28:46 PKT" name="onFinish" finished-at="2022-10-11T11:28:46 PKT" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@64d1042f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- onFinish -->
+      </class> <!-- SiteTestCases.SettingsTests.APIandWebhooksTests.APIandWebhooksTestsPage -->
+    </test> <!-- CreateWebhooks -->
+  </suite> <!-- MailRoom2.Automation QA -->
+</testng-results>

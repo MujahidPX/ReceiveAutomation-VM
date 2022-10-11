@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>case_study</groupId>
+	<artifactId>casestudy</artifactId>
+	<version>1.0-SNAPSHOT</version>
+
+	<!-- Add Properties -->
+
+	<properties>
+		<hostToTest>
+			none
+		</hostToTest>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+
+	<!-- Add POM File Dependencies and Plugins -->
+
+	<dependencies>
+
+<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+		<dependency>
+			<groupId>io.github.bonigarcia</groupId>
+			<artifactId>webdrivermanager</artifactId>
+			<version>5.0.3</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-email -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-email</artifactId>
+    <version>1.5</version>
+</dependency>
+
+
+		<!-- Selenium Browsers Dependencies -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-chrome-driver</artifactId>
+			<version>4.1.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-firefox-driver</artifactId>
+			<version>4.1.1</version>
+		</dependency>
+
+		<!-- Selenium Web Driver Dependencies -->
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-api</artifactId>
+			<version>4.1.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-support</artifactId>
+			<version>4.1.2</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+    		<groupId>org.seleniumhq.selenium</groupId>
+    		<artifactId>selenium-java</artifactId>
+    		<version>4.4.0</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>5.0.0</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-collections4 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-collections4</artifactId>
+			<version>4.1</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>4.1.2</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>4.1.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>5.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>5.1</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-csv</artifactId>
+			<version>1.5</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.6.2</version>
+			<scope>test</scope>
+		</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.google.guava/guava -->
+<dependency>
+    <groupId>com.google.guava</groupId>
+    <artifactId>guava</artifactId>
+    <version>21.0</version>
+</dependency>
+
+
+<!-- slack -->
+<dependency>
+     <groupId>com.github.seratch</groupId>
+     <artifactId>jslack</artifactId>
+     <version>3.4.2</version>
+ </dependency>
+ <dependency>
+     <groupId>org.apache.httpcomponents</groupId>
+     <artifactId>httpclient</artifactId>
+     <version>4.5.13</version>
+ </dependency>
+ <dependency>
+     <groupId>org.apache.httpcomponents</groupId>
+     <artifactId>httpmime</artifactId>
+     <version>4.5.13</version>
+ </dependency>
+
+
+
+		<!-- Test NG DEPENDENCY FOR TESTING -->
+
+		<!-- TestNG dependency -->
+
+		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.5</version>
+		</dependency>
+
+
+
+		<!-- Maven Json Dependency -->
+
+		<dependency>
+			<groupId>org.jfree</groupId>
+			<artifactId>jfreechart</artifactId>
+			<version>1.5.0</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20171018</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.8.0</version>
+			<type>maven-plugin</type>
+		</dependency>
+		
+		<!-- Slack API for sending report -->
+		<dependency>
+    		 <groupId>com.github.seratch</groupId>
+     			<artifactId>jslack</artifactId>
+     			<version>3.4.2</version>
+ 		</dependency>
+ 		<dependency>
+     		<groupId>org.apache.httpcomponents</groupId>
+     			<artifactId>httpclient</artifactId>
+     			<version>4.5.13</version>
+ 		</dependency>
+ 		<dependency>
+     		<groupId>org.apache.httpcomponents</groupId>
+     			<artifactId>httpmime</artifactId>
+     			<version>4.5.13</version>
+ 		</dependency>
+
+		<!-- Reporting Depencies -->
+
+		<dependency>
+			<groupId>com.relevantcodes</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>2.41.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-email</artifactId>
+			<version>1.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.5</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>se</groupId>
+			<artifactId>se</artifactId>
+			<version>1.0</version>
+			<scope>system</scope>
+			<systemPath>C:\Users\MuhammadMujahid\Downloads\Ounass\Ounass\lib\se.jar</systemPath>
+		</dependency>
+
+	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>forplay-legacy</id>
+			<url>http://forplay.googlecode.com/svn/mavenrepo</url>
+		</repository>
+	</repositories>
+
+	<build>
+		<resources>
+			<resource>
+				<filtering>false</filtering>
+				<directory>src/main/resources</directory>
+			</resource>
+			<resource>
+				<filtering>false</filtering>
+				<directory>src/main/java</directory>
+				<includes>
+					<include>**</include>
+				</includes>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</resource>
+		</resources>
+		<testResources>
+			<testResource>
+				<filtering>false</filtering>
+				<directory>src/test/java</directory>
+				<includes>
+					<include>**</include>
+				</includes>
+				<excludes>
+					<exclude>**/*.java</exclude>
+				</excludes>
+			</testResource>
+		</testResources>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.8.1</version>
+				<configuration>
+					<source>8</source>
+					<target>8</target>
+				</configuration>
+			</plugin>
+
+			<!-- Suirefire plugin to run xml files -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>3.0.0-M7</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>QATest2.xml</suiteXmlFile>
+					</suiteXmlFiles>
+					<testFailureIgnore>true</testFailureIgnore>
+					<useSystemClassLoader>false</useSystemClassLoader>
+
+				</configuration>
+			</plugin>
+			
+			<!-- Post-Man plugin -->
+		 <plugin>
+			<groupId>ch.fortysix</groupId>
+			<artifactId>maven-postman-plugin</artifactId>
+			<executions>
+				<execution>
+				
+				<id>send a mail</id>
+				<phase>test</phase>
+				<goals>
+				<goal>send-mail</goal>
+				</goals>
+				<inherited>true</inherited>
+				
+				<configuration>
+					 <!-- From Email address -->
+					<from>PackageXAutomation@outlook.com</from>
+					
+					<!--  Email subject -->
+					<subject>Test Automation Report</subject>
+					
+					<!-- Fail the build if the mail doesnt reach -->
+					<failonerror>true</failonerror>
+					
+					<!-- host -->
+					<mailhost>smtp.outlook.com</mailhost>
+					<!-- port of the host -->
+					<mailport>587</mailport>
+					<mailssl>true</mailssl>
+					<mailAltConfig>true</mailAltConfig>
+					
+					<!-- Email Authentication(USername and Password) -->
+					<mailuser>PackageXAutomation@outlook.com</mailuser>
+					<mailpassword>Abcd1234!Abcd1234!</mailpassword>
+					
+					<receivers>
+						<!-- To Email address -->
+						<receiver>muhammad.mujahid@packagex.io</receiver>
+					</receivers>
+					
+					<fileSets>
+					<fileSet>
+						<!-- Report directory Path -->
+						<directory>C://Users//MuhammadMujahid//Downloads//Ounass//Ounass//test-output</directory>
+						<includes>
+							<!-- Report file name -->
+							<include>ReceiveAutomation.html</include>
+						</includes>
+						<!-- Use Regular Expressions like **/*.html if you want all the html files to send-->
+						</fileSet>
+					</fileSets>			
+				
+				</configuration>
+				</execution>
+			</executions>
+		</plugin>
+		
+		</plugins>
+	</build>
+</project>
