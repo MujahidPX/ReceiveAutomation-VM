@@ -30,4 +30,30 @@
       </class> <!-- SiteTestCases.SettingsTests.PlanAndBillingTests.PlanAndBillingPageTests -->
     </classes>
   </test> <!-- UpgradePlan(failed) -->
+  <test thread-count="5" name="CreateNewWorkflow(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="https://qa.portal.packagex.xyz/login"/>
+    <groups>
+      <run>
+        <include name="Settings"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests">
+        <methods>
+          <include name="initPageObjectClass4"/>
+          <include name="closeDriver"/>
+          <include name="initPageObjectClass3"/>
+          <include name="initPageObjectClass2"/>
+          <include name="initPageObjectClass"/>
+          <include name="initDriver"/>
+          <include name="tearDown"/>
+          <include name="initPageObjectClass1"/>
+          <include name="CreateNewWorkflow" invocation-numbers="0"/>
+          <include name="onFinish"/>
+          <include name="initPageObjectClass5"/>
+        </methods>
+      </class> <!-- SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests -->
+    </classes>
+  </test> <!-- CreateNewWorkflow(failed) -->
 </suite> <!-- Failed suite [MailRoom2.Automation QA] -->

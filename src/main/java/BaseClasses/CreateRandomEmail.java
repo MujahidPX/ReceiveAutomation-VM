@@ -47,7 +47,7 @@ public class CreateRandomEmail{
     	String Name;
     	Random randomGenerator = new Random();  
     	int randomInt = randomGenerator.nextInt(10000);  
-    	String TestName="Auto Test "+randomInt;
+    	String TestName="AutoUser "+randomInt;
     	Name = TestName;
     	return Name;
     }

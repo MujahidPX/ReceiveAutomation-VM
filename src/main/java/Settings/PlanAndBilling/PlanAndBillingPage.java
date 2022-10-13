@@ -541,6 +541,7 @@ public class PlanAndBillingPage extends PlanAndBillingPageElements{
 	public void premiumPlan() {
 		
 		CommonActions.waitForElement(PremiumPlan);
+		Waits.waitTime(2);
 		String premiumplan = PremiumPlan.getText();
 		String premiumPlan = premiumplan.replace(" ", "");
 		System.out.println(premiumPlan);

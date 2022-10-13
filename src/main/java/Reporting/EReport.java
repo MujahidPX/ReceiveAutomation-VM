@@ -134,7 +134,7 @@ public class EReport implements IReporter {
 		        messageBodyPart.setFileName(fileName);
 		        multipart.addBodyPart(messageBodyPart);
 		        message.setContent(multipart);
-		        System.out.println("Report Sending via Email");
+		        System.out.println("Report Sending to Email");
 		        Transport.send(message);
 		        System.out.println("Done");
 
