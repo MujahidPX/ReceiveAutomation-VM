@@ -185,11 +185,17 @@ public class LocationPageElements {
 	 @FindBy(xpath="//input[@id='cta-snapsend']")
 	 protected WebElement TitleSnapSend; 
 	 
+	 @FindBy(xpath="(//*[local-name()='svg' and contains(@id,'snapsend_delete')])[last()]")
+	 protected WebElement DeleteBtnSnapSend;
+	 
 	 @FindBy(xpath="//p[text()='Forward']/button[@role='switch']")
 	 protected WebElement EnableForwardSwithcBtn;
 	 
 	 @FindBy(xpath="//input[@id='cta-fwd']")
 	 protected WebElement TitleForward; 
+	 
+	 @FindBy(xpath="(//*[local-name()='svg' and contains(@id,'fwd_delete')])[last()]")
+	 protected WebElement DeleteBtnForward; 
 	 
 	 @FindBy(xpath="//p[text()='Destroy']/button[@role='switch']")
 	 protected WebElement EnableDestroySwithcBtn;
@@ -197,25 +203,41 @@ public class LocationPageElements {
 	 @FindBy(xpath="//input[@id='cta-destroy']")
 	 protected WebElement TitleDestroy; 
 	 
+	 @FindBy(xpath="(//*[local-name()='svg' and contains(@id,'destroy_delete')])[last()]")
+	 protected WebElement DeleteBtnDestroy; 
+	 
 	 @FindBy(xpath="//p[text()='Hold']/button[@role='switch']")
 	 protected WebElement EnableHoldSwithcBtn;
 	 
 	 @FindBy(xpath="//input[@id='cta-hold']")
 	 protected WebElement TitleHold; 
 	 
+	 @FindBy(xpath="(//*[local-name()='svg' and contains(@id,'hold_delete')])[last()]")
+	 protected WebElement DeleteBtnHold; 
 	 
 	 @FindBy(xpath="(//button[text()='Add New'])[1]")
 	 protected WebElement AddNewBtnSS;
 	 
+	 @FindBys(@FindBy(xpath="(//p[text()='Duplicate labels are not allowed.'])[1]"))
+	 public List<WebElement> DuplicateLabelsSS;
+	 
 	 @FindBy(xpath="(//button[text()='Add New'])[2]")
 	 protected WebElement AddNewBtnFwd;
+	 
+	 @FindBys(@FindBy(xpath="(//p[text()='Duplicate labels are not allowed.'])[2]"))
+	 public List<WebElement> DuplicateLabelsFwd;
 	 
 	 @FindBy(xpath="(//button[text()='Add New'])[3]")
 	 protected WebElement AddNewBtnDestroy;
 	 
+	 @FindBys(@FindBy(xpath="(//p[text()='Duplicate labels are not allowed.'])[3]"))
+	 public List<WebElement> DuplicateLabelsDestroy;
+	 
 	 @FindBy(xpath="(//button[text()='Add New'])[4]")
 	 protected WebElement AddNewBtnHold;
-	 
+	 	 
+	 @FindBys(@FindBy(xpath="(//p[text()='Duplicate labels are not allowed.'])[4]"))
+	 public List<WebElement> DuplicateLabelsHold;
 	 
 	 @FindBy(xpath="(//tr[contains(@class,'ant-table-row ant-table-row-level-0')])[last()]")
 	 protected WebElement LastUserFromList;

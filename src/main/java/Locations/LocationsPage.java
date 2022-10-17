@@ -492,6 +492,20 @@ public class LocationsPage extends LocationPageElements {
 		if (AddNewBtnSS.isDisplayed()) {
 			AddNewBtnSS.click();
 		}
+		
+		if(!DuplicateLabelsSS.isEmpty()) {
+
+			DeleteBtnSnapSend.click();
+
+			CommonActions.waitForElement(TitleSnapSend);
+			TitleSnapSend.click();
+
+			CommonActions.waitForElement(AddNewBtnSS);
+			if (AddNewBtnSS.isDisplayed()) {
+				AddNewBtnSS.click();
+			}
+
+		}
 
 	}
 
@@ -517,6 +531,20 @@ public class LocationsPage extends LocationPageElements {
 		if (AddNewBtnFwd.isDisplayed()) {
 			AddNewBtnFwd.click();
 		}
+		
+		if(!DuplicateLabelsFwd.isEmpty()) {
+
+			DeleteBtnForward.click();
+
+			CommonActions.waitForElement(TitleForward);
+			TitleForward.click();
+
+			CommonActions.waitForElement(AddNewBtnFwd);
+			if (AddNewBtnFwd.isDisplayed()) {
+				AddNewBtnFwd.click();
+			}
+
+		}
 	}
 
 	public void destroy() {
@@ -541,6 +569,20 @@ public class LocationsPage extends LocationPageElements {
 		if (AddNewBtnDestroy.isDisplayed()) {
 			AddNewBtnDestroy.click();
 		}
+		
+		if(!DuplicateLabelsDestroy.isEmpty()) {
+
+			DeleteBtnDestroy.click();
+
+			CommonActions.waitForElement(TitleDestroy);
+			TitleDestroy.click();
+
+			CommonActions.waitForElement(AddNewBtnDestroy);
+			if (AddNewBtnDestroy.isDisplayed()) {
+				AddNewBtnDestroy.click();
+			}
+
+		}
 	}
 
 	public void hold() {
@@ -564,6 +606,22 @@ public class LocationsPage extends LocationPageElements {
 		CommonActions.waitForElement(AddNewBtnHold);
 		if (AddNewBtnHold.isDisplayed()) {
 			AddNewBtnHold.click();
+		}
+		
+		Waits.waitTime(3);
+		
+		if(!DuplicateLabelsHold.isEmpty()) {
+
+			DeleteBtnHold.click();
+
+			CommonActions.waitForElement(TitleHold);
+			TitleHold.click();
+
+			CommonActions.waitForElement(AddNewBtnHold);
+			if (AddNewBtnHold.isDisplayed()) {
+				AddNewBtnHold.click();
+			}
+
 		}
 	}
 

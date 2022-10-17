@@ -293,14 +293,13 @@
 				<version>2.19.1</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>QA.xml</suiteXmlFile>
+						<suiteXmlFile>QATest3.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<testFailureIgnore>true</testFailureIgnore>
 					<useSystemClassLoader>false</useSystemClassLoader>
 
 				</configuration>
 			</plugin>
-			
 		
 		</plugins>
 	</build>
