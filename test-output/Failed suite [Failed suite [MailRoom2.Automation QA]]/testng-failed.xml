@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Failed suite [Failed suite [MailRoom2.Automation QA]]]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Reporting.EReport"/>
+  </listeners>
+  <test thread-count="5" name="SignInOptions_EnableMagicLink(failed)(failed)(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="https://qa.portal.packagex.xyz/login"/>
+    <groups>
+      <run>
+        <include name="Settings"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="SiteTestCases.SettingsTests.CompanyManagementTests.CompanyManagementTestsPage">
+        <methods>
+          <include name="SignInOptions_EnableMagicLink" invocation-numbers="0"/>
+          <include name="closeDriver"/>
+          <include name="initPageObjectClass"/>
+          <include name="initPageObjectClass2"/>
+          <include name="initPageObjectClass4"/>
+          <include name="initDriver"/>
+          <include name="tearDown"/>
+          <include name="initPageObjectClass1"/>
+          <include name="initPageObjectClass3"/>
+          <include name="onFinish"/>
+        </methods>
+      </class> <!-- SiteTestCases.SettingsTests.CompanyManagementTests.CompanyManagementTestsPage -->
+    </classes>
+  </test> <!-- SignInOptions_EnableMagicLink(failed)(failed)(failed) -->
+  <test thread-count="5" name="CreateNewWorkflow(failed)(failed)(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="https://qa.portal.packagex.xyz/login"/>
+    <groups>
+      <run>
+        <include name="Settings"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests">
+        <methods>
+          <include name="initPageObjectClass4"/>
+          <include name="closeDriver"/>
+          <include name="initPageObjectClass3"/>
+          <include name="initPageObjectClass2"/>
+          <include name="initPageObjectClass"/>
+          <include name="initDriver"/>
+          <include name="tearDown"/>
+          <include name="initPageObjectClass1"/>
+          <include name="CreateNewWorkflow" invocation-numbers="0"/>
+          <include name="onFinish"/>
+          <include name="initPageObjectClass5"/>
+        </methods>
+      </class> <!-- SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests -->
+    </classes>
+  </test> <!-- CreateNewWorkflow(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [MailRoom2.Automation QA]]] -->
