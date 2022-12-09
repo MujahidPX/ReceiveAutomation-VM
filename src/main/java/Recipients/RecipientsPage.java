@@ -417,7 +417,7 @@ public class RecipientsPage extends RecipientsPageElements {
 
 		CommonActions.waitForElement(AlternateGroupAlias);
 		if(AlternateGroupAlias.isDisplayed()) {
-			AlternateGroupAlias.sendKeys("ABC Test 2");
+			AlternateGroupAlias.sendKeys("ABC User 2");
 		}
 
 		clickAddBtn();
@@ -552,6 +552,107 @@ public class RecipientsPage extends RecipientsPageElements {
 
 	}
 
+	public void uploadCSV_EmptyAlternateFields(String locationSearched, String file, String uploadPreference) throws InterruptedException, IOException, AWTException {
+		Helper.waitForPageLoad(driver);
+
+		clickRecipientTab();
+
+		clickAdd_ddl();
+		clickUploadCSV();
+
+		clickUploadNewCSV();
+		
+		if(file == "EmptyAlternateFields") 
+		{
+			attachFileEmptyAlternateFields();
+		}
+
+		clickUpload();
+		mapAltGroupNameGroupAlias();
+		for (int i=0; i<5; i++) 
+		{
+			mapItems();
+		}
+		Waits.waitTime(3);
+		clickNext();
+		
+		getEmailImportedRecipients();
+		reviewEmptyAlternateFields();
+
+		if(uploadPreference == "Merge") {
+
+			selectMerge();
+		}
+		if(uploadPreference == "Overwrite") {
+
+			selectOverwrite();
+		}
+
+		clickContinue();
+		Waits.waitTime(3);
+		csvUploadedAssertion();
+		
+		refreshData();
+
+	}
+	
+	public void uploadCSV_AlternateFields(String locationSearched, String file, String uploadPreference) throws InterruptedException, IOException, AWTException {
+		Helper.waitForPageLoad(driver);
+
+		clickRecipientTab();
+
+		clickAdd_ddl();
+		clickUploadCSV();
+
+		clickUploadNewCSV();
+		
+		if(file == "AlternateFields") 
+		{
+			attachFileAlternateFields();	
+		}
+		
+		if(file == "AlternateEmailDuplicate") 
+		{
+			attachFileAlternateEmailDuplicate();
+		}
+		
+		if(file == "AlternateFieldsDuplicate") 
+		{
+			attachFileAlternateFieldsDuplicate();
+		}
+
+		clickUpload();
+		for (int i=0; i<=5; i++) 
+		{
+			mapItems();
+		}
+		Waits.waitTime(3);
+		clickNext();
+		getEmailImportedRecipients();
+		try 
+		{
+			clickNext();
+		}
+		catch(Exception e) {
+			review();
+		}
+
+		if(uploadPreference == "Merge") {
+
+			selectMerge();
+		}
+		if(uploadPreference == "Overwrite") {
+
+			selectOverwrite();
+		}
+
+		clickContinue();
+		Waits.waitTime(3);
+		csvUploadedAssertion();
+		
+		refreshData();
+
+	}
 	
 	public void uploadCSVNameEmailMissing(String locationSearched, String file, String uploadPreference) throws InterruptedException, IOException, AWTException {
 		Helper.waitForPageLoad(driver);
@@ -925,13 +1026,14 @@ public class RecipientsPage extends RecipientsPageElements {
 
 		Waits.waitTime(2);
 		CommonActions.focusElementJs(driver, DropYourFileHere);
-		CommonActions.waitForElement(DropYourFileHere);
-		if(DropYourFileHere.isDisplayed()) {
-			DropYourFileHere.click();
-
+		//CommonActions.waitForElement(DropYourFileHere);
+		//if(DropYourFileHere.isDisplayed()) {
+			//DropYourFileHere.click();
+			DropYourFileHere.sendKeys("C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\UploadCSV-DuplicateEmail.csv");
+			
 			SiteActions.uploadAndAttachFile_DuplicateEmail();						
 			Thread.sleep(1000);
-		}		
+		//}		
 	}
 
 	public void attachFileEmailMissing() throws InterruptedException, IOException, AWTException {
@@ -986,6 +1088,59 @@ public class RecipientsPage extends RecipientsPageElements {
 			Thread.sleep(1000);
 		}		
 	}
+	
+	public void attachFileEmptyAlternateFields() throws InterruptedException, IOException, AWTException {
+
+		Waits.waitTime(2);
+		CommonActions.focusElementJs(driver, DropYourFileHere);
+		CommonActions.waitForElement(DropYourFileHere);
+		if(DropYourFileHere.isDisplayed()) {
+			DropYourFileHere.click();
+
+			SiteActions.uploadFile_EmptyAlternateFields();						
+			Thread.sleep(1000);
+		}		
+	}
+	
+	public void attachFileAlternateFields() throws InterruptedException, IOException, AWTException {
+
+		Waits.waitTime(2);
+		CommonActions.focusElementJs(driver, DropYourFileHere);
+		CommonActions.waitForElement(DropYourFileHere);
+		if(DropYourFileHere.isDisplayed()) {
+			DropYourFileHere.click();
+
+			SiteActions.uploadFile_AlternateFields();						
+			Thread.sleep(1000);
+		}		
+	}
+	
+	public void attachFileAlternateFieldsDuplicate() throws InterruptedException, IOException, AWTException {
+
+		Waits.waitTime(2);
+		CommonActions.focusElementJs(driver, DropYourFileHere);
+		CommonActions.waitForElement(DropYourFileHere);
+		if(DropYourFileHere.isDisplayed()) {
+			DropYourFileHere.click();
+
+			SiteActions.uploadFile_AlternateFieldsDuplicate();						
+			Thread.sleep(1000);
+		}		
+	}
+	
+	public void attachFileAlternateEmailDuplicate() throws InterruptedException, IOException, AWTException {
+
+		Waits.waitTime(2);
+		CommonActions.focusElementJs(driver, DropYourFileHere);
+		CommonActions.waitForElement(DropYourFileHere);
+		if(DropYourFileHere.isDisplayed()) {
+			DropYourFileHere.click();
+
+			SiteActions.uploadFile_AlternateEmailDuplicate();						
+			Thread.sleep(1000);
+		}		
+	}
+	
 	
 	public void attachFile10000Recipients() throws InterruptedException, IOException, AWTException {
 
@@ -1094,12 +1249,48 @@ public class RecipientsPage extends RecipientsPageElements {
 		//}
 	}
 
+	public void mapAltGroupNameGroupAlias() {
+
+		Waits.waitTime(2);
+		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+		
+		List<WebElement> UploadedItem = driver.findElements(By.xpath("//span[text()='Group Alias']"));
+		if(!UploadedItem.isEmpty()) 
+		{
+			System.out.println("Group already selected");
+		}
+		else 
+		{				
+			//String item1 = UploadedItems.getText();
+			//String cap = item1.substring(0, 1).toUpperCase() + item1.substring(1);
+			//System.out.println(cap);
+
+			//DBSelects.click();
+
+			//div[text()='unit']/following::div[1]
+			WebElement elementList = driver.findElement(By.xpath("//div[text()='alternate group name']/following::span[text()='Select'][1]"));
+			CommonActions.waitForElement(elementList);
+			CommonActions.focusElementJs(driver, elementList);
+			elementList.click();
+			//element1.sendKeys(cap);
+			WebElement element = driver.findElement(By.xpath("//p[text()='Group Alias']"));
+			//element1.sendKeys(cap);
+			//CommonActions.scrollIntoView(element);
+			
+			Waits.waitTime(1);
+			CommonActions.focusElementJs(driver, element);
+			element.click();
+
+		}
+	}
+	
 	public void clickNext() throws InterruptedException {
 
 		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
 		//driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 
 		CommonActions.waitForElement(NextBtn);
+		CommonActions.focusElementJs(driver, NextBtn);
 		if(NextBtn.isDisplayed()) {
 			NextBtn.click();	
 			Thread.sleep(1000);
@@ -1134,6 +1325,36 @@ public class RecipientsPage extends RecipientsPageElements {
 			{
 				EmailReview.click();
 				EmailReview.sendKeys("Man123@yopmail.com");
+			}
+		}
+		catch(NoSuchElementException e) {
+
+		}
+
+		CommonActions.waitForElement(ConfirmBtn);
+		ConfirmBtn.click();
+	}
+	
+	public void reviewEmptyAlternateFields() {
+
+		driver.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
+		FixnowBtn.click();
+		try {
+			if(NameReviewCSV.isDisplayed()) 
+			{
+				NameReviewCSV.sendKeys("User D");
+			}
+		}
+		catch(NoSuchElementException e){
+
+		}
+		try {
+			Waits.waitTime(1);
+			if(EmailReviewCSV.isDisplayed()) 
+			{
+				EmailReviewCSV.click();
+				EmailReviewCSV.sendKeys("test3@packagex.xyz");
 			}
 		}
 		catch(NoSuchElementException e) {

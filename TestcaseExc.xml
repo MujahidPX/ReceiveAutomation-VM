@@ -14,13 +14,13 @@
 		<parameter name="browser" value="Chrome"></parameter>
 		<groups>
 			<run>
-				<include name="Locations"></include>
+				<include name="Users"></include>
 			</run>
 		</groups>
 		<classes>
-			<class name="SiteTestCases.UsersTests.UsersPageTests">
+			<class name="SiteTestCases.LoginTests.LoginPageTests">
 			<methods>
-				<include name="AddNewOperatorUser"/>
+				<include name="ForgotPassword"/>
 			</methods>
 			</class>			
 		</classes>

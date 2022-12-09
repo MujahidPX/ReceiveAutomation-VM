@@ -78,6 +78,8 @@ public class CommonActions {
 				Helper.waitForPageLoad(driver);
 				System.out.println("URL Started: " + url);
 				
+				driver.switchTo().defaultContent();
+				
 
 	}
 

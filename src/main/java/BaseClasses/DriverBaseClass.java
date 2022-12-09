@@ -136,7 +136,7 @@ public class DriverBaseClass {
 
 		File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		try {
-			FileUtils.copyFile(file, new File("C:\\Users\\MuhammadMujahid\\Downloads\\Ounass\\Ounass\\ErrorScreenshots\\"+dateName+".png"));
+			FileUtils.copyFile(file, new File("C:\\Users\\QA.User\\Desktop\\Receive_Automation\\ErrorScreenshots\\"+dateName+".png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

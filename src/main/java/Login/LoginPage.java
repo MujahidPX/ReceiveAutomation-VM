@@ -224,6 +224,77 @@ public class LoginPage extends LoginElements {
 		}
 	}
 
+	public void forgotPasswordOL(String email, String password) throws InterruptedException {
+
+		Helper.waitForPageLoad(driver);
+
+		enterEmail(email);				
+		clickContinue();
+		CommonActions.waitForPageLoad();
+		try {
+			usePasswordInstead();	
+			
+		}	
+		catch(NoSuchElementException e){
+				System.out.println("No password instead option");
+		}
+
+		clickForgotPassword();
+		clickContinue();
+		Helper.waitForPageLoad(driver);
+/*
+		List<WebElement> attemptLimit = driver.findElements(By.xpath("//*[text()='Attempt limit exceeded, please try after some time.']"));
+		if(!attemptLimit.isEmpty()) {
+			try {				
+				loginInstead();
+				enterPassword(password);
+				showHidePassword();
+				System.out.println("Attempt limit exceeded");
+			}
+
+			catch(Exception e) {
+				// Store the current window handle
+				String winHandleBefore = driver.getWindowHandle();
+
+				// Perform the click operation that opens new window
+
+				driver.get("https://outlook.office365.com/mail");			
+				OLEmailForCode.sendKeys(email);
+				NextBtn.click();
+				OLPassword.sendKeys(email);
+				NextBtn.click();
+				NextBtn.click();
+				//driver.switchTo().frame("ifmail");
+				SignIntoMailRoom.click();
+
+				driver.close();			
+
+				// Switch to new window opened
+				for(String winHandle : driver.getWindowHandles()){
+
+					driver.switchTo().window(winHandle);
+				}
+			}
+		}
+
+		else {
+*/
+			clickContinue();
+			switchToNewWindowAndGetEmailCodeOL(email, password);
+			clickContinue();
+
+			CommonActions.waitForElement(PasswordChangedMsg);
+			if(PasswordChangedMsg.isDisplayed()) {
+				CommonActions.focusElementJs(driver, PasswordChangedMsg);
+				String ExpectedText="Your password has been changed successfully. Please log in with new credentials.";
+				String ActualText = PasswordChangedMsg.getText();
+				Assert.assertEquals(ActualText, ExpectedText);
+			}
+
+			enterPassword(password);
+			showHidePassword();
+		//}
+	}
 	
 	public void clickForgotPassword() {
 
@@ -241,13 +312,69 @@ public class LoginPage extends LoginElements {
 		EmailForCode.sendKeys(email);
 		CheckEmailBtn.click();
 
-		driver.switchTo().frame("ifinbox");
+		//driver.switchTo().frame("ifinbox");
 		PackageXReceiveEmail.click();
 		driver.switchTo().defaultContent();
 		//clickCapchaCheckbox();
 
 		driver.switchTo().frame("ifmail");
 		String emailCode = TemporaryCodeFromEmail.getText();
+		System.out.println("Temporary Email Code : " + emailCode);
+		driver.switchTo().defaultContent();
+		driver.close();
+		driver.switchTo().window(originalWindow);
+
+		if(ContinueBtn.isEnabled()) {
+			ContinueBtn.click();
+		}
+
+		if(TemporaryPassword.isDisplayed()) {
+
+			TemporaryPassword.sendKeys(emailCode);
+		}
+
+		if(NewPassword.isDisplayed()) {
+
+			NewPassword.sendKeys(password);
+		}
+
+		if(ConfirmPassword.isDisplayed()) {
+
+			ConfirmPassword.sendKeys(password);
+		}
+	}
+	
+	public void switchToNewWindowAndGetEmailCodeOL(String email, String password) {
+
+		originalWindow = driver.getWindowHandle();
+		driver.switchTo().newWindow(WindowType.WINDOW);
+		driver.get("https://outlook.office365.com/mail");	
+		CommonActions.waitForElement(OLEmailForCode);
+		OLEmailForCode.sendKeys("QAAutomation@packagex.io");
+		CommonActions.waitForElement(NextBtn);
+		NextBtn.click();
+		CommonActions.waitForElement(OLPassword);
+		OLPassword.sendKeys("VisionX3210");
+		CommonActions.waitForElement(NextBtn);
+		NextBtn.click();
+		CommonActions.waitForElement(NextBtn);
+		NextBtn.click();
+
+		//driver.switchTo().frame("ifinbox");
+		CommonActions.scrollIntoView(OLMailTesting);
+		//CommonActions.waitForElement(OLMailTesting);
+		CommonActions.focusElementJs(driver, OLMailTesting);
+		OLMailTesting.click();
+		CommonActions.waitForElement(OLInbox);
+		OLInbox.click();
+		CommonActions.waitForElement(OLPackageXReceive);
+		OLPackageXReceive.click();
+		
+		//driver.switchTo().defaultContent();
+		//clickCapchaCheckbox();
+
+		//driver.switchTo().frame("ifmail");
+		String emailCode = OLTemporaryCode.getText();
 		System.out.println("Temporary Email Code : " + emailCode);
 		driver.switchTo().defaultContent();
 		driver.close();
@@ -546,6 +673,50 @@ public class LoginPage extends LoginElements {
 		}
 	}
 
+	public void signInViaMagicLinkOL(String email) throws InterruptedException {
+
+		Helper.waitForPageLoad(driver);
+
+		enterEmail(email);				
+		clickContinue();
+		
+		CommonActions.waitForPageLoad();
+		verifyMagicLinkSent();
+
+		// Store the current window handle
+		String winHandleBefore = driver.getWindowHandle();
+
+		driver.get("https://outlook.office365.com/mail");			
+		OLEmailForCode.sendKeys("QAAutomation@packagex.io");
+		
+		CommonActions.waitForElement(NextBtn);
+		NextBtn.click();
+		CommonActions.waitForElement(OLPassword);
+		OLPassword.sendKeys("VisionX3210");
+		CommonActions.waitForElement(NextBtn);
+		NextBtn.click();
+		CommonActions.waitForElement(NextBtn);
+		NextBtn.click();
+
+		//CommonActions.waitForElement(OLMailTesting);
+		CommonActions.scrollIntoView(OLMailTesting);
+		CommonActions.focusElementJs(driver, OLMailTesting);
+		OLMailTesting.click();
+		CommonActions.waitForElement(OLInbox);
+		OLInbox.click();
+		CommonActions.waitForElement(OLPackageXReceive);
+		OLPackageXReceive.click();
+		
+		OLSignIntoReceiveAccount.click();
+		driver.close();			
+
+		// Switch to new window opened
+		for(String winHandle : driver.getWindowHandles()){
+
+			driver.switchTo().window(winHandle);
+		}
+	}
+	
 	public void signInViaMagicLinkUAT(String email) throws InterruptedException {
 
 

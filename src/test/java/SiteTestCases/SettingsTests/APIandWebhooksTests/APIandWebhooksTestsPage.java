@@ -19,6 +19,7 @@ import Settings.CompanyManagement.CompanyManagementPage;
 import SiteElements.SiteActions;
 import Users.UsersPage;
 import Utilities.GlobalVariables;
+import Utilities.Waits;
 
 
 public class APIandWebhooksTestsPage extends DriverBaseClass {
@@ -66,6 +67,7 @@ public class APIandWebhooksTestsPage extends DriverBaseClass {
 		siteActions.navigateURL(GlobalVariables.qa_Url);
 		loginPage.login(GlobalVariables.AutomationEmail1, GlobalVariables.AutomationPassword1);
 		apiAndWebhooksPage.generateLabelOCRAPIKey();
+		Waits.waitTime(2);
 		loginPage.logout();
 		
 	}

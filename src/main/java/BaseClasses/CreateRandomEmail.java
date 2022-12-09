@@ -8,7 +8,7 @@ public class CreateRandomEmail{
 
     public static String generateTestEmail(){
         String Email;
-        String timeStamp = new SimpleDateFormat("yyyyMMddHHmm").format(new Date());
+        String timeStamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
         String TestName="admin"+timeStamp+"@yopmail.com";
         Email = TestName;
         return Email;

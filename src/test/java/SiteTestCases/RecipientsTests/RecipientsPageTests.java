@@ -203,7 +203,7 @@ public class RecipientsPageTests extends DriverBaseClass {
 		recipientsPage.uploadCSV(GlobalVariables.locationSearchedRecepCSV, GlobalVariables.fileuploadRecepCSV, GlobalVariables.uploadPreferenceMerge);
 		UsersPage.clickExpandBtn();
 		recipientsPage.clickRecipientTab();
-		Waits.waitTime(3);
+		Waits.waitTime(5);
 		recipientsPage.searchImportedRecipientEmail();
 		Waits.waitTime(3);
 		loginPage.logout();
@@ -253,6 +253,71 @@ public class RecipientsPageTests extends DriverBaseClass {
 		recipientsPage.uploadCSV_UnitGroup(GlobalVariables.locationSearched, GlobalVariables.fileuploadUnitGroup, GlobalVariables.uploadPreferenceOverwrite);
 		//recipientsPage.downloadFailedFileAndPath();
 		recipientsPage.clickRecipientTab();
+		Waits.waitTime(3);
+		loginPage.logout();
+	}
+	
+
+	@Test(groups =  {"UploadCSV"} , enabled = true)
+	@Parameters({"url"})
+	public void UploadCSVEmptyAlternateFields(@Optional String url) throws InterruptedException, IOException, AWTException {
+		
+		siteActions.navigateURL(GlobalVariables.qa_Url);
+		loginPage.login(GlobalVariables.AutomationEmail, GlobalVariables.AutomationPassword);
+		recipientsPage.chooseAndSearchLocation(GlobalVariables.locationSearchedUAT);
+		recipientsPage.uploadCSV_EmptyAlternateFields(GlobalVariables.locationSearched, GlobalVariables.fileuploadEmptyAlternateFields, GlobalVariables.uploadPreferenceOverwrite);
+		//recipientsPage.downloadFailedFileAndPath();
+		recipientsPage.clickRecipientTab();
+		Waits.waitTime(3);
+		recipientsPage.searchImportedRecipientEmail();
+		Waits.waitTime(3);
+		loginPage.logout();
+	}
+	
+	@Test(groups =  {"UploadCSV"} , enabled = true)
+	@Parameters({"url"})
+	public void UploadCSVAlternateFields(@Optional String url) throws InterruptedException, IOException, AWTException {
+		
+		siteActions.navigateURL(GlobalVariables.qa_Url);
+		loginPage.login(GlobalVariables.AutomationEmail, GlobalVariables.AutomationPassword);
+		recipientsPage.chooseAndSearchLocation(GlobalVariables.locationSearchedUAT);
+		recipientsPage.uploadCSV_AlternateFields(GlobalVariables.locationSearched, GlobalVariables.fileuploadAlternateFields, GlobalVariables.uploadPreferenceOverwrite);
+		//recipientsPage.downloadFailedFileAndPath();
+		recipientsPage.clickRecipientTab();
+		Waits.waitTime(3);
+		recipientsPage.searchImportedRecipientEmail();
+		Waits.waitTime(3);
+		loginPage.logout();
+	}
+	
+	@Test(groups =  {"UploadCSV"} , enabled = true)
+	@Parameters({"url"})
+	public void UploadCSVAlternateEmailDuplicate(@Optional String url) throws InterruptedException, IOException, AWTException {
+		
+		siteActions.navigateURL(GlobalVariables.qa_Url);
+		loginPage.login(GlobalVariables.AutomationEmail, GlobalVariables.AutomationPassword);
+		recipientsPage.chooseAndSearchLocation(GlobalVariables.locationSearchedUAT);
+		recipientsPage.uploadCSV_AlternateFields(GlobalVariables.locationSearched, GlobalVariables.fileuploadAlternateEmailDuplicate, GlobalVariables.uploadPreferenceOverwrite);
+		//recipientsPage.downloadFailedFileAndPath();
+		recipientsPage.clickRecipientTab();
+		Waits.waitTime(3);
+		//recipientsPage.searchImportedRecipientEmail();
+		//Waits.waitTime(3);
+		loginPage.logout();
+	}
+	
+	@Test(groups =  {"UploadCSV"} , enabled = true)
+	@Parameters({"url"})
+	public void UploadCSVAlternateFieldsDuplicate(@Optional String url) throws InterruptedException, IOException, AWTException {
+		
+		siteActions.navigateURL(GlobalVariables.qa_Url);
+		loginPage.login(GlobalVariables.AutomationEmail, GlobalVariables.AutomationPassword);
+		recipientsPage.chooseAndSearchLocation(GlobalVariables.locationSearchedUAT);
+		recipientsPage.uploadCSV_AlternateFields(GlobalVariables.locationSearched, GlobalVariables.fileuploadAlternateFieldsDuplicate, GlobalVariables.uploadPreferenceOverwrite);
+		//recipientsPage.downloadFailedFileAndPath();
+		recipientsPage.clickRecipientTab();
+		Waits.waitTime(3);
+		recipientsPage.searchImportedRecipientEmail();
 		Waits.waitTime(3);
 		loginPage.logout();
 	}

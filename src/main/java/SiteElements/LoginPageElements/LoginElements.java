@@ -98,8 +98,32 @@ public class LoginElements {
 	//@FindBy(xpath="//span[text()='Sign in to Receive Account']")
 	protected WebElement SignIntoReceiveAccount;
 	
+	@FindBy(xpath="//span[text()='Sign in to Receive Account']")
+	protected WebElement OLSignIntoReceiveAccount;
+	
 	@FindBy(xpath="//input[@placeholder='Enter your inbox here']")
 	public static WebElement EmailForCode;
+	
+	@FindBy(xpath="//input[@type='email']")
+	public static WebElement OLEmailForCode;
+	
+	@FindBy(xpath="//input[@type='submit']")
+	public static WebElement NextBtn;
+	
+	@FindBy(xpath="//input[@type='password']")
+	public static WebElement OLPassword;
+	
+	@FindBy(xpath="//span[text()='Mail Testing']")
+	public static WebElement OLMailTesting;
+	
+	@FindBy(xpath="(//span[text()='Mail Testing']/following::div/span[text()='Inbox'])[1]")
+	public static WebElement OLInbox;
+	
+	@FindBy(xpath="(//span[text()='PackageX Receive'])[1]")
+	public static WebElement OLPackageXReceive;
+	
+	@FindBy(xpath="//img[@alt='password_icon']/following::td/span")
+	public static WebElement OLTemporaryCode;
 	
 	@FindBy(xpath="//button[@title='Check Inbox @yopmail.com']")
 	public static WebElement CheckEmailBtn;

@@ -4,29 +4,53 @@
   <listeners>
     <listener class-name="Reporting.EReport"/>
   </listeners>
-  <test thread-count="5" name="AddNewOperator(failed)(failed)">
+  <test thread-count="5" name="LoginViaMagicLink(failed)(failed)">
     <parameter name="browser" value="Chrome"/>
     <parameter name="url" value="https://qa.portal.packagex.xyz/login"/>
     <groups>
       <run>
-        <include name="Users"/>
+        <include name="Login"/>
       </run>
     </groups>
     <classes>
-      <class name="SiteTestCases.UsersTests.UsersPageTests">
+      <class name="SiteTestCases.LoginTests.LoginPageTests">
         <methods>
+          <include name="initPageObjectClass"/>
           <include name="closeDriver"/>
+          <include name="LoginViaMagicLink" invocation-numbers="0"/>
           <include name="initPageObjectClass2"/>
-          <include name="initPageObjectClass3"/>
+          <include name="initDriver"/>
+          <include name="tearDown"/>
+          <include name="initPageObjectClass1"/>
+          <include name="onFinish"/>
+        </methods>
+      </class> <!-- SiteTestCases.LoginTests.LoginPageTests -->
+    </classes>
+  </test> <!-- LoginViaMagicLink(failed)(failed) -->
+  <test thread-count="5" name="CreateNewWorkflow(failed)(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="https://qa.portal.packagex.xyz/login"/>
+    <groups>
+      <run>
+        <include name="Settings"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests">
+        <methods>
           <include name="initPageObjectClass4"/>
-          <include name="SendEmailReport"/>
+          <include name="closeDriver"/>
+          <include name="initPageObjectClass3"/>
+          <include name="initPageObjectClass2"/>
           <include name="initPageObjectClass"/>
           <include name="initDriver"/>
           <include name="tearDown"/>
           <include name="initPageObjectClass1"/>
-          <include name="AddNewOperatorUser" invocation-numbers="0"/>
+          <include name="CreateNewWorkflow" invocation-numbers="0"/>
+          <include name="onFinish"/>
+          <include name="initPageObjectClass5"/>
         </methods>
-      </class> <!-- SiteTestCases.UsersTests.UsersPageTests -->
+      </class> <!-- SiteTestCases.SettingsTests.WorkflowsTests.WorkflowsPageTests -->
     </classes>
-  </test> <!-- AddNewOperator(failed)(failed) -->
+  </test> <!-- CreateNewWorkflow(failed)(failed) -->
 </suite> <!-- Failed suite [Failed suite [MailRoom2.Automation QA]] -->

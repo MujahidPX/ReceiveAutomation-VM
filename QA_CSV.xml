@@ -1,0 +1,211 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="MailRoom2.Automation QA">
+	<listeners>
+		<listener class-name="Reporting.EReport" />
+	</listeners>
+	
+	<test name="UploadCSVUPMerge">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVUPMerge"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVUPOverwrite">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVUPOverwrite"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVInvalidEmail">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVInvalidEmail"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVDuplicateEmail">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVDuplicateEmail"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVNameEmailMissing">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVNameEmailMissing"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVEmailMissing">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVEmailMissing"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVLongAdress">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVLongAdress"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVUpdateMerge">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="locationSearched" value="@Optional"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVUpdateMerge"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVEditUploadMerge">
+		<parameter name="url"
+			value="https://qa.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="locationSearched" value="@Optional"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVEditUploadMerge"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVUnitGroup">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="locationSearched" value="@Optional"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVUnitGroup"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVEmptyAlternateFields">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="locationSearched" value="@Optional"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVEmptyAlternateFields"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+</suite>

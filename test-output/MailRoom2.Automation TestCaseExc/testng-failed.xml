@@ -10,23 +10,22 @@
     <parameter name="url" value="QA"/>
     <groups>
       <run>
-        <include name="Locations"/>
+        <include name="Users"/>
       </run>
     </groups>
     <classes>
-      <class name="SiteTestCases.UsersTests.UsersPageTests">
+      <class name="SiteTestCases.LoginTests.LoginPageTests">
         <methods>
+          <include name="initPageObjectClass"/>
           <include name="closeDriver"/>
           <include name="initPageObjectClass2"/>
-          <include name="initPageObjectClass3"/>
-          <include name="initPageObjectClass4"/>
-          <include name="initPageObjectClass"/>
           <include name="initDriver"/>
           <include name="tearDown"/>
           <include name="initPageObjectClass1"/>
-          <include name="AddNewOperatorUser" invocation-numbers="0 0"/>
+          <include name="onFinish"/>
+          <include name="ForgotPassword" invocation-numbers="0 0"/>
         </methods>
-      </class> <!-- SiteTestCases.UsersTests.UsersPageTests -->
+      </class> <!-- SiteTestCases.LoginTests.LoginPageTests -->
     </classes>
   </test> <!-- LoginViaMagicLink(failed) -->
 </suite> <!-- Failed suite [MailRoom2.Automation TestCaseExc] -->

@@ -57,6 +57,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
+import javax.swing.Action;
 
 import java.util.Properties;
 import javax.activation.*;
@@ -85,7 +86,7 @@ public class SiteActions extends SiteElements {
 
 	public static void uploadAndAttachFile() throws InterruptedException, AWTException, IOException {
 
-		String fileAbsolutePath = "C:\\Users\\MuhammadMujahid\\OneDrive - VisionX Technologies Pvt. Ltd\\Desktop\\CSV_All_Files\\UploadCSV.csv";
+		String fileAbsolutePath = "C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\UploadCSV.csv";
 		StringSelection clipBoardPath = new StringSelection(fileAbsolutePath);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(clipBoardPath, null);
 
@@ -94,7 +95,7 @@ public class SiteActions extends SiteElements {
 
 	public static void uploadAndAttachFileOverwrite() throws InterruptedException, AWTException, IOException {
 
-		String fileAbsolutePath = "C:\\Users\\MuhammadMujahid\\OneDrive - VisionX Technologies Pvt. Ltd\\Desktop\\CSV_All_Files\\UploadCSV-OW.csv";
+		String fileAbsolutePath = "C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\UploadCSV-OW.csv";
 		StringSelection clipBoardPath = new StringSelection(fileAbsolutePath);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(clipBoardPath, null);
 
@@ -103,7 +104,7 @@ public class SiteActions extends SiteElements {
 
 	public static void uploadAndAttachFile10000Recipients() throws InterruptedException, AWTException, IOException {
 
-		String fileAbsolutePath = "C:\\Users\\MuhammadMujahid\\OneDrive - VisionX Technologies Pvt. Ltd\\Desktop\\CSV_All_Files\\10000Recipients.csv";
+		String fileAbsolutePath = "C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\10000Recipients.csv";
 		StringSelection clipBoardPath = new StringSelection(fileAbsolutePath);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(clipBoardPath, null);
 
@@ -131,7 +132,7 @@ public class SiteActions extends SiteElements {
 
 	public static void uploadAndAttachFile_address() throws InterruptedException, AWTException {
 
-		String fileAbsolutePath = "C:\\Users\\MuhammadMujahid\\OneDrive - VisionX Technologies Pvt. Ltd\\Desktop\\CSV_All_Files\\CSV-LongAddress.csv";
+		String fileAbsolutePath = "C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\CSV-LongAddress.csv";
 		StringSelection clipBoardPath = new StringSelection(fileAbsolutePath);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(clipBoardPath, null);
 
@@ -140,7 +141,7 @@ public class SiteActions extends SiteElements {
 
 	public static void uploadAndAttachFile_InvalidEmail() throws InterruptedException, AWTException {
 
-		String fileAbsolutePath = "C:\\Users\\MuhammadMujahid\\OneDrive - VisionX Technologies Pvt. Ltd\\Desktop\\CSV_All_Files\\UploadCSV-InvalidEmail.csv";
+		String fileAbsolutePath = "C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\UploadCSV-InvalidEmail.csv";
 		StringSelection clipBoardPath = new StringSelection(fileAbsolutePath);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(clipBoardPath, null);
 
@@ -149,7 +150,8 @@ public class SiteActions extends SiteElements {
 
 	public static void uploadAndAttachFile_DuplicateEmail() throws InterruptedException, AWTException {
 
-		String fileAbsolutePath = "C:\\Users\\MuhammadMujahid\\OneDrive - VisionX Technologies Pvt. Ltd\\Desktop\\CSV_All_Files\\UploadCSV-DuplicateEmail.csv";
+		//String fileAbsolutePath = "C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\UploadCSV-DuplicateEmail.csv";
+		String fileAbsolutePath = "https://github.com/MujahidPX/ReceiveAutomation/blob/master/CSV-Files/CSV_All_Files/UploadCSV-DuplicateEmail.csv";
 		StringSelection clipBoardPath = new StringSelection(fileAbsolutePath);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(clipBoardPath, null);
 
@@ -158,7 +160,7 @@ public class SiteActions extends SiteElements {
 
 	public static void uploadAndAttachFile_EmailMissing() throws InterruptedException, AWTException {
 
-		String fileAbsolutePath = "C:\\Users\\MuhammadMujahid\\OneDrive - VisionX Technologies Pvt. Ltd\\Desktop\\CSV_All_Files\\UploadCSV-EmailMissing.csv";
+		String fileAbsolutePath = "C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\UploadCSV-EmailMissing.csv";
 		StringSelection clipBoardPath = new StringSelection(fileAbsolutePath);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(clipBoardPath, null);
 
@@ -167,7 +169,7 @@ public class SiteActions extends SiteElements {
 
 	public static void uploadAndAttachFile_NameEmailMissing() throws InterruptedException, AWTException {
 
-		String fileAbsolutePath = "C:\\Users\\MuhammadMujahid\\OneDrive - VisionX Technologies Pvt. Ltd\\Desktop\\CSV_All_Files\\UploadCSV-NameEmailMissing.csv";
+		String fileAbsolutePath = "C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\UploadCSV-NameEmailMissing.csv";
 		StringSelection clipBoardPath = new StringSelection(fileAbsolutePath);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(clipBoardPath, null);
 
@@ -176,7 +178,7 @@ public class SiteActions extends SiteElements {
 
 	public static void uploadAndAttachFile_RecipientCSV() throws InterruptedException, AWTException {
 
-		String fileAbsolutePath = "C:\\Users\\MuhammadMujahid\\OneDrive - VisionX Technologies Pvt. Ltd\\Desktop\\CSV_All_Files\\UpdateRecepData.csv";
+		String fileAbsolutePath = "C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\UpdateRecepData.csv";
 		StringSelection clipBoardPath = new StringSelection(fileAbsolutePath);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(clipBoardPath, null);
 
@@ -185,7 +187,7 @@ public class SiteActions extends SiteElements {
 
 	public static void uploadAndAttachFile_1() throws InterruptedException, AWTException {
 
-		String fileAbsolutePath = "C:\\Users\\MuhammadMujahid\\OneDrive - VisionX Technologies Pvt. Ltd\\Desktop\\CSV_All_Files\\UpdateRecepData.csv";
+		String fileAbsolutePath = "C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\UpdateRecepData.csv";
 		StringSelection clipBoardPath = new StringSelection(fileAbsolutePath);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(clipBoardPath, null);
 
@@ -194,7 +196,7 @@ public class SiteActions extends SiteElements {
 
 	public static void uploadLogo() throws InterruptedException, AWTException, IOException {
 
-		String fileAbsolutePath = "C:\\Users\\MuhammadMujahid\\Downloads\\profile_cc.png";
+		String fileAbsolutePath = "C:\\Users\\QA.User\\Downloads\\profile_cc.png";
 		Waits.waitTime(2);
 		StringSelection clipBoardPath = new StringSelection(fileAbsolutePath);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(clipBoardPath, null);
@@ -205,12 +207,49 @@ public class SiteActions extends SiteElements {
 	
 	public static void uploadFile_UnitGroup() throws InterruptedException, AWTException {
 
-		String fileAbsolutePath = "C:\\Users\\MuhammadMujahid\\OneDrive - VisionX Technologies Pvt. Ltd\\Desktop\\CSV_All_Files\\Auto3CSV.csv";
+		String fileAbsolutePath = "C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\Auto3CSV.csv";
 		StringSelection clipBoardPath = new StringSelection(fileAbsolutePath);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(clipBoardPath, null);
 
 		robotUploadActions();
 	}
+	
+	public static void uploadFile_EmptyAlternateFields() throws InterruptedException, AWTException {
+
+		String fileAbsolutePath = "C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\EmptyAlternateFields.csv";
+		StringSelection clipBoardPath = new StringSelection(fileAbsolutePath);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(clipBoardPath, null);
+
+		robotUploadActions();
+	}
+	
+	public static void uploadFile_AlternateFields() throws InterruptedException, AWTException {
+
+		String fileAbsolutePath = "C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\AlternateFields.csv";
+		StringSelection clipBoardPath = new StringSelection(fileAbsolutePath);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(clipBoardPath, null);
+
+		robotUploadActions();
+	}
+	
+	public static void uploadFile_AlternateFieldsDuplicate() throws InterruptedException, AWTException {
+
+		String fileAbsolutePath = "C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\AlternateFieldsDuplicate.csv";
+		StringSelection clipBoardPath = new StringSelection(fileAbsolutePath);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(clipBoardPath, null);
+
+		robotUploadActions();
+	}
+	
+	public static void uploadFile_AlternateEmailDuplicate() throws InterruptedException, AWTException {
+
+		String fileAbsolutePath = "C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\AlternateEmailDuplicate.csv";
+		StringSelection clipBoardPath = new StringSelection(fileAbsolutePath);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(clipBoardPath, null);
+
+		robotUploadActions();
+	}
+	
 	
 	public static void notification() {
 
@@ -301,6 +340,20 @@ public class SiteActions extends SiteElements {
 		//builder.keyDown( Keys.CONTROL ).sendKeys( "a" ).keyUp( Keys.CONTROL ).build().perform();
 		//builder.keyDown( Keys.CONTROL ).sendKeys( "c" ).keyUp( Keys.CONTROL ).build().perform();
 	}
+	
+	
+//	public void uploadFile() {
+//
+//		
+//
+//		Actions builder = new Actions(driver);
+//		Action dragAndDrop = (Action) builder.clickAndHold(elementFrom)
+//				.moveToElement(elementFrom)
+//				.release(elementTo)
+//				.build();
+//		dragAndDrop.perform();
+//	} 
+	
 
 }
 

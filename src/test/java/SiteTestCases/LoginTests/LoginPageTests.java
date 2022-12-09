@@ -74,7 +74,7 @@ public class LoginPageTests extends DriverBaseClass {
 	@Parameters({"url"})
 	public void ForgotPassword(@Optional String url) throws InterruptedException {
 		siteActions.navigateURL(GlobalVariables.qa_Url);
-		loginPage.forgotPassword(GlobalVariables.AutomationEmail, GlobalVariables.AutomationPassword);
+		loginPage.forgotPasswordOL(GlobalVariables.AutomationEmail, GlobalVariables.AutomationPassword);
 		loginPage.logout();
 	}
 	
@@ -98,7 +98,7 @@ public class LoginPageTests extends DriverBaseClass {
 	@Parameters({"url"})
 	public void LoginViaMagicLink(@Optional String url) throws InterruptedException {
 		siteActions.navigateURL(GlobalVariables.qa_Url);
-		loginPage.signInViaMagicLink(GlobalVariables.AutomationEmail);
+		loginPage.signInViaMagicLinkOL(GlobalVariables.AutomationEmail);
 		loginPage.logout();
 	}
 	

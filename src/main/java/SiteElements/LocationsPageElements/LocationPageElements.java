@@ -164,7 +164,12 @@ public class LocationPageElements {
 	 // Receive Connect
 	 
 	 @FindBy(xpath="//span[text()='Receive Connect is disabled on Location Level']")
-	 protected WebElement ReceiveConnectDisabled;
+	 protected WebElement ReceiveConnectDisabledLocLev;
+	 
+	 @FindBy(xpath="//span[text()='Receive Connect is disabled on Tenant Level']")
+	 protected WebElement ReceiveConnectDisabledTenLev;
+	 
+	//h6[text()='Enable Receive Connect']/following::button[@role='switch'][1]
 	 
 	 @FindBy(xpath="(//p[text()='Scan & Send'])[1]")
 	 protected WebElement ScanAndSendTab;

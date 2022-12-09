@@ -190,9 +190,10 @@ public class UsersPage extends UsersPageElements {
 			if(!roleList.isEmpty()) {
 
 				CommonActions.focusElementJs(driver, Roleddl1);
-				Roleddl1.click();
-				Roleddl1.sendKeys(Keys.DOWN);
-				Roleddl1.sendKeys(Keys.DOWN);
+				//Roleddl1.click();
+				//Roleddl1.sendKeys(Keys.DOWN);
+				//Roleddl1.sendKeys(Keys.DOWN);
+				Thread.sleep(1000);
 				Roleddl1.sendKeys(userRole , Keys.ENTER);
 
 			}

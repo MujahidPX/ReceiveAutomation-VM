@@ -466,7 +466,12 @@ public class LocationsPage extends LocationPageElements {
 		CommonActions.waitForClickablility(SaveChangesBtn, 15);
 		SaveChangesBtn.click();
 
-		Waits.waitTime(2);
+		//Waits.waitTime(2);
+		
+		SiteActions.notification();
+		assertEquals(RecipientsPageElements.SuccessMsgNotification.getText(), "Changes updated successfully");
+	    CommonActions.waitForElementToDisappear(RecipientsPageElements.NotificationMsg);
+		
 	}
 
 	public void scanAndSend() {

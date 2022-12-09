@@ -377,6 +377,82 @@
 		</classes>
 	</test>
 	
+	<test name="UploadCSVEmptyAlternateFields">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="locationSearched" value="@Optional"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVEmptyAlternateFields"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVAlternateFields">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="locationSearched" value="@Optional"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVAlternateFields"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVAlternateEmailDuplicate">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="locationSearched" value="@Optional"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVAlternateEmailDuplicate"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
+	<test name="UploadCSVAlternateFieldsDuplicate">
+		<parameter name="url"
+			value="https://uat.portal.packagex.xyz/login" />
+		<parameter name="browser" value="Chrome"></parameter>
+		<parameter name="locationSearched" value="@Optional"></parameter>
+		<groups>
+			<run>
+				<include name="UploadCSV"></include>
+			</run>
+		</groups>
+		<classes>
+			<class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+			<methods>
+				<include name="UploadCSVAlternateFieldsDuplicate"/>
+			</methods>
+			</class>			
+		</classes>
+	</test>
+	
 	<test name="Analytics">
 		<parameter name="url"
 			value="https://qa.portal.packagex.xyz/login" />
@@ -431,7 +507,7 @@
 		</classes>
 	</test>
 	
-	<test name="AddPaymentMethod">
+	<!-- test name="AddPaymentMethod">
 		<parameter name="url"
 			value="https://qa.portal.packagex.xyz/login" />
 		<parameter name="browser" value="Chrome"></parameter>
@@ -501,7 +577,7 @@
 			</methods>
 			</class>			
 		</classes>
-	</test>	
+	</test -->	
 	
 	<test name="CreateNewWorkflow">
 		<parameter name="url"

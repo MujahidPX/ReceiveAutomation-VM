@@ -181,7 +181,8 @@ public class RecipientsPageElements {
     @FindBy(xpath="//ul[@role='listbox']")
     protected WebElement LocationsList;
     
-    @FindBy(xpath="//div[@class='ant-upload-drag-container']")
+   // @FindBy(xpath="//div[@class='ant-upload-drag-container']")
+    @FindBy(xpath="//div[@class='ant-upload ant-upload-drag sc-hrDvXV kUHhKy']/span/div/p[1]")
     protected WebElement DropYourFileHere;
     
     @FindBy(xpath="//span[text()='Upload']")
@@ -269,9 +270,14 @@ public class RecipientsPageElements {
 	@FindBy(id="name_0")
 	protected WebElement NameReview;
 	
+	@FindBy(xpath="//input[contains(@id,'name_')]")
+	protected WebElement NameReviewCSV;
+	
 	@FindBy(id="email_0")
 	protected WebElement EmailReview;
 	
+	@FindBy(xpath="//input[contains(@id,'email_')]")
+	protected WebElement EmailReviewCSV;
 	
 	@FindBy(xpath="//div[@class='inner-text']")
 	protected WebElement GroupData;

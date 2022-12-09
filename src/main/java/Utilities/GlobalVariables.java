@@ -17,10 +17,12 @@ public class GlobalVariables extends ExcelFile {
       public static String AdminEmail = "automation@yopmail.com";
       public static String AdminPassword = "Pakistan_123";
       
-      public static String AutomationEmail = "testing-automation@yopmail.com";
+      //public static String AutomationEmail = "testing-automation@yopmail.com";
+      public static String AutomationEmail = "jinnah@packagex.xyz";
       public static String AutomationPassword = "Abcd1234!";
       
-      public static String AutomationEmail1 = "test-automation1@yopmail.com";
+      public static String AutomationEmail1 = "jinnah@packagex.xyz";
+      //public static String AutomationEmail1 = "test-automation1@yopmail.com";
       public static String AutomationPassword1 = "Abcd1234!";
       
       public static String Automation_Email = "test111@yopmail.com";
@@ -79,8 +81,8 @@ public class GlobalVariables extends ExcelFile {
       public static String uploadPreferenceMerge = "Merge";
       public static String uploadPreferenceOverwrite = "Overwrite";
       
-      public static String locationSearched ="Madrid";
-      //public static String locationSearched ="Melbourne";
+      public static String locationSearched ="Melbourne";
+      //public static String locationSearched ="Madrid";
 
       public static String locationSearchedUAT ="Weimar";
       public static String locationSearchedUAT2 ="Inovative Build 1";
@@ -88,7 +90,8 @@ public class GlobalVariables extends ExcelFile {
       
       public static String autoRecepientUser ="Recipient AutoUser";
       
-      public static String locationSearchedRecepCSV ="RecipientCSV"; 
+      public static String locationSearchedRecepCSV ="Sydney"; 
+      //public static String locationSearchedRecepCSV ="RecipientCSV";
       
       public static String Location = "Weimar, Germany ";
       public static String LocationCode = CreateRandomEmail.generateRandomInt();
@@ -103,6 +106,10 @@ public class GlobalVariables extends ExcelFile {
       public static String fileuploadInvalidAddress = "InvalidAddress";
       public static String fileuploadRecepCSV = "RecepientCSV";
       public static String fileuploadUnitGroup = "MapUnitGroup";
+      public static String fileuploadEmptyAlternateFields = "EmptyAlternateFields";
+      public static String fileuploadAlternateFields = "AlternateFields";
+      public static String fileuploadAlternateFieldsDuplicate = "AlternateFieldsDuplicate";
+      public static String fileuploadAlternateEmailDuplicate = "AlternateEmailDuplicate";
       public static String fileupload10000Recipients = "10000Recipients";
       
       public static String CSVuploadFilePath = "RecepientCSV";
