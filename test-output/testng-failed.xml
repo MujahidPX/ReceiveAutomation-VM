@@ -27,6 +27,31 @@
       </class> <!-- SiteTestCases.LoginTests.LoginPageTests -->
     </classes>
   </test> <!-- LoginViaMagicLink(failed) -->
+  <test thread-count="5" name="UploadCSVUPMerge(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="url" value="https://qa.portal.packagex.xyz/login"/>
+    <groups>
+      <run>
+        <include name="UploadCSV"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="initPageObjectClass2"/>
+          <include name="initPageObjectClass4"/>
+          <include name="initPageObjectClass"/>
+          <include name="initPageObjectClass3"/>
+          <include name="initDriver"/>
+          <include name="tearDown"/>
+          <include name="UploadCSVUPMerge" invocation-numbers="0"/>
+          <include name="initPageObjectClass1"/>
+          <include name="onFinish"/>
+        </methods>
+      </class> <!-- SiteTestCases.RecipientsTests.RecipientsPageTests -->
+    </classes>
+  </test> <!-- UploadCSVUPMerge(failed) -->
   <test thread-count="5" name="UploadCSVUPOverwrite(failed)">
     <parameter name="browser" value="Chrome"/>
     <parameter name="url" value="https://qa.portal.packagex.xyz/login"/>
@@ -229,6 +254,136 @@
       </class> <!-- SiteTestCases.RecipientsTests.RecipientsPageTests -->
     </classes>
   </test> <!-- UploadCSVEditUploadMerge(failed) -->
+  <test thread-count="5" name="UploadCSVUnitGroup(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="locationSearched" value="@Optional"/>
+    <parameter name="url" value="https://uat.portal.packagex.xyz/login"/>
+    <groups>
+      <run>
+        <include name="UploadCSV"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="initPageObjectClass2"/>
+          <include name="initPageObjectClass4"/>
+          <include name="initPageObjectClass"/>
+          <include name="initPageObjectClass3"/>
+          <include name="initDriver"/>
+          <include name="tearDown"/>
+          <include name="initPageObjectClass1"/>
+          <include name="onFinish"/>
+          <include name="UploadCSVUnitGroup" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- SiteTestCases.RecipientsTests.RecipientsPageTests -->
+    </classes>
+  </test> <!-- UploadCSVUnitGroup(failed) -->
+  <test thread-count="5" name="UploadCSVEmptyAlternateFields(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="locationSearched" value="@Optional"/>
+    <parameter name="url" value="https://uat.portal.packagex.xyz/login"/>
+    <groups>
+      <run>
+        <include name="UploadCSV"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="initPageObjectClass2"/>
+          <include name="initPageObjectClass4"/>
+          <include name="UploadCSVEmptyAlternateFields" invocation-numbers="0"/>
+          <include name="initPageObjectClass"/>
+          <include name="initPageObjectClass3"/>
+          <include name="initDriver"/>
+          <include name="tearDown"/>
+          <include name="initPageObjectClass1"/>
+          <include name="onFinish"/>
+        </methods>
+      </class> <!-- SiteTestCases.RecipientsTests.RecipientsPageTests -->
+    </classes>
+  </test> <!-- UploadCSVEmptyAlternateFields(failed) -->
+  <test thread-count="5" name="UploadCSVAlternateFields(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="locationSearched" value="@Optional"/>
+    <parameter name="url" value="https://uat.portal.packagex.xyz/login"/>
+    <groups>
+      <run>
+        <include name="UploadCSV"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="initPageObjectClass2"/>
+          <include name="initPageObjectClass4"/>
+          <include name="initPageObjectClass"/>
+          <include name="UploadCSVAlternateFields" invocation-numbers="0"/>
+          <include name="initPageObjectClass3"/>
+          <include name="initDriver"/>
+          <include name="tearDown"/>
+          <include name="initPageObjectClass1"/>
+          <include name="onFinish"/>
+        </methods>
+      </class> <!-- SiteTestCases.RecipientsTests.RecipientsPageTests -->
+    </classes>
+  </test> <!-- UploadCSVAlternateFields(failed) -->
+  <test thread-count="5" name="UploadCSVAlternateEmailDuplicate(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="locationSearched" value="@Optional"/>
+    <parameter name="url" value="https://uat.portal.packagex.xyz/login"/>
+    <groups>
+      <run>
+        <include name="UploadCSV"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="initPageObjectClass2"/>
+          <include name="initPageObjectClass4"/>
+          <include name="initPageObjectClass"/>
+          <include name="initPageObjectClass3"/>
+          <include name="UploadCSVAlternateEmailDuplicate" invocation-numbers="0"/>
+          <include name="initDriver"/>
+          <include name="tearDown"/>
+          <include name="initPageObjectClass1"/>
+          <include name="onFinish"/>
+        </methods>
+      </class> <!-- SiteTestCases.RecipientsTests.RecipientsPageTests -->
+    </classes>
+  </test> <!-- UploadCSVAlternateEmailDuplicate(failed) -->
+  <test thread-count="5" name="UploadCSVAlternateFieldsDuplicate(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="locationSearched" value="@Optional"/>
+    <parameter name="url" value="https://uat.portal.packagex.xyz/login"/>
+    <groups>
+      <run>
+        <include name="UploadCSV"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="SiteTestCases.RecipientsTests.RecipientsPageTests">
+        <methods>
+          <include name="closeDriver"/>
+          <include name="initPageObjectClass2"/>
+          <include name="initPageObjectClass4"/>
+          <include name="initPageObjectClass"/>
+          <include name="initPageObjectClass3"/>
+          <include name="initDriver"/>
+          <include name="tearDown"/>
+          <include name="initPageObjectClass1"/>
+          <include name="UploadCSVAlternateFieldsDuplicate" invocation-numbers="0"/>
+          <include name="onFinish"/>
+        </methods>
+      </class> <!-- SiteTestCases.RecipientsTests.RecipientsPageTests -->
+    </classes>
+  </test> <!-- UploadCSVAlternateFieldsDuplicate(failed) -->
   <test thread-count="5" name="CreateNewWorkflow(failed)">
     <parameter name="browser" value="Chrome"/>
     <parameter name="url" value="https://qa.portal.packagex.xyz/login"/>

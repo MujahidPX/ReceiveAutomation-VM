@@ -287,7 +287,7 @@
 				<version>2.19.1</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>QATest3.xml</suiteXmlFile>
+						<suiteXmlFile>QATest2.xml</suiteXmlFile>
 					</suiteXmlFiles>
 					<testFailureIgnore>true</testFailureIgnore>
 					<useSystemClassLoader>false</useSystemClassLoader>

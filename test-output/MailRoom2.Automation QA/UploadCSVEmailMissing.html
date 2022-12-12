@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Dec 09 11:26:52 PKT 2022</td>
+<td>Started on:</td><td>Mon Dec 12 10:53:49 PKT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>96 seconds (96671 ms)</td>
+<tr><td>Total time:</td><td>112 seconds (112487 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td>UploadCSV </td>
 </tr><tr>
@@ -76,23 +76,23 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='SiteTestCases.RecipientsTests.RecipientsPageTests.UploadCSVEmailMissing()'><b>UploadCSVEmailMissing</b><br>Test class: SiteTestCases.RecipientsTests.RecipientsPageTests<br>Parameters: https://qa.portal.packagex.xyz/login</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //span[text()=&apos;Next&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&apos;ant-upload ant-upload-drag sc-hrDvXV kUHhKy&apos;]/span/div/p[1]&apos; (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 	at Utilities.CommonActions.waitForElement(CommonActions.java:254)
-	at Recipients.RecipientsPage.clickNext(RecipientsPage.java:1291)
-	at Recipients.RecipientsPage.uploadCSVMissingData(RecipientsPage.java:847)
+	at Recipients.RecipientsPage.attachFileEmailMissing(RecipientsPage.java:1043)
+	at Recipients.RecipientsPage.uploadCSVMissingData(RecipientsPage.java:838)
 	at SiteTestCases.RecipientsTests.RecipientsPageTests.UploadCSVEmailMissing(RecipientsPageTests.java:172)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Next&apos;]&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;ant-upload ant-upload-drag sc-hrDvXV kUHhKy&apos;]/span/div/p[1]&quot;}
   (Session info: chrome=107.0.5304.107)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
 System info: host: &apos;QA&apos;, ip: &apos;192.168.7.189&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f7cbdb8b2fea095ed2fad38b3b3fbdcc, findElement {using=xpath, value=//span[text()=&apos;Next&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\QA131F~1.USE\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61603}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61603/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f7cbdb8b2fea095ed2fad38b3b3fbdcc
+Command: [bf4232294581925f569ac66e34f28482, findElement {using=xpath, value=//div[@class=&apos;ant-upload ant-upload-drag sc-hrDvXV kUHhKy&apos;]/span/div/p[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\QA131F~1.USE\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:52465}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52465/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bf4232294581925f569ac66e34f28482
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -115,13 +115,13 @@ Session ID: f7cbdb8b2fea095ed2fad38b3b3fbdcc
 	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
 	... 32 more
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace202781303", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace202781303'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //span[text()=&apos;Next&apos;]&apos; (tried for 30 second(s) with 500 milliseconds interval)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace797474021", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace797474021'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //div[@class=&apos;ant-upload ant-upload-drag sc-hrDvXV kUHhKy&apos;]/span/div/p[1]&apos; (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
 	at Utilities.CommonActions.waitForElement(CommonActions.java:254)
-	at Recipients.RecipientsPage.clickNext(RecipientsPage.java:1291)
-	at Recipients.RecipientsPage.uploadCSVMissingData(RecipientsPage.java:847)
+	at Recipients.RecipientsPage.attachFileEmailMissing(RecipientsPage.java:1043)
+	at Recipients.RecipientsPage.uploadCSVMissingData(RecipientsPage.java:838)
 	at SiteTestCases.RecipientsTests.RecipientsPageTests.UploadCSVEmailMissing(RecipientsPageTests.java:172)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -151,16 +151,16 @@ Session ID: f7cbdb8b2fea095ed2fad38b3b3fbdcc
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[text()=&apos;Next&apos;]&quot;}
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[@class=&apos;ant-upload ant-upload-drag sc-hrDvXV kUHhKy&apos;]/span/div/p[1]&quot;}
   (Session info: chrome=107.0.5304.107)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.2&apos;, revision: &apos;9a5a329c5a&apos;
 System info: host: &apos;QA&apos;, ip: &apos;192.168.7.189&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.4.1&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [f7cbdb8b2fea095ed2fad38b3b3fbdcc, findElement {using=xpath, value=//span[text()=&apos;Next&apos;]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\QA131F~1.USE\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:61603}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61603/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f7cbdb8b2fea095ed2fad38b3b3fbdcc
-	at jdk.internal.reflect.GeneratedConstructorAccessor23.newInstance(Unknown Source)
+Command: [bf4232294581925f569ac66e34f28482, findElement {using=xpath, value=//div[@class=&apos;ant-upload ant-upload-drag sc-hrDvXV kUHhKy&apos;]/span/div/p[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.107, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\QA131F~1.USE\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:52465}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:52465/devtoo..., se:cdpVersion: 107.0.5304.107, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bf4232294581925f569ac66e34f28482
+	at jdk.internal.reflect.GeneratedConstructorAccessor30.newInstance(Unknown Source)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
@@ -187,8 +187,8 @@ Session ID: f7cbdb8b2fea095ed2fad38b3b3fbdcc
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
 	... 32 more
 </pre></div></td>
-<td>93</td>
-<td>SiteTestCases.RecipientsTests.RecipientsPageTests@25df00a0</td></tr>
+<td>110</td>
+<td>SiteTestCases.RecipientsTests.RecipientsPageTests@c05fddc</td></tr>
 </table><p>
 </body>
 </html>
