@@ -181,8 +181,8 @@ public class RecipientsPageElements {
     @FindBy(xpath="//ul[@role='listbox']")
     protected WebElement LocationsList;
     
-   // @FindBy(xpath="//div[@class='ant-upload-drag-container']")
-    @FindBy(xpath="//div[@class='ant-upload ant-upload-drag sc-hrDvXV kUHhKy']/span/div/p[1]")
+    @FindBy(xpath="//div[@class='ant-upload-drag-container']")
+   // @FindBy(xpath="//div[@class='ant-upload ant-upload-drag sc-hrDvXV kUHhKy']/span/div/p[1]")
     protected WebElement DropYourFileHere;
     
     @FindBy(xpath="//span[text()='Upload']")

@@ -1026,14 +1026,14 @@ public class RecipientsPage extends RecipientsPageElements {
 
 		Waits.waitTime(2);
 		CommonActions.focusElementJs(driver, DropYourFileHere);
-		//CommonActions.waitForElement(DropYourFileHere);
-		//if(DropYourFileHere.isDisplayed()) {
-			//DropYourFileHere.click();
-			DropYourFileHere.sendKeys("C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\UploadCSV-DuplicateEmail.csv");
+		CommonActions.waitForElement(DropYourFileHere);
+		if(DropYourFileHere.isDisplayed()) {
+			DropYourFileHere.click();
+			//DropYourFileHere.sendKeys("C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\UploadCSV-DuplicateEmail.csv");
 			
 			SiteActions.uploadAndAttachFile_DuplicateEmail();						
 			Thread.sleep(1000);
-		//}		
+		}		
 	}
 
 	public void attachFileEmailMissing() throws InterruptedException, IOException, AWTException {

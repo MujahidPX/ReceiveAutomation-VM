@@ -150,8 +150,8 @@ public class SiteActions extends SiteElements {
 
 	public static void uploadAndAttachFile_DuplicateEmail() throws InterruptedException, AWTException {
 
-		//String fileAbsolutePath = "C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\UploadCSV-DuplicateEmail.csv";
-		String fileAbsolutePath = "https://github.com/MujahidPX/ReceiveAutomation/blob/master/CSV-Files/CSV_All_Files/UploadCSV-DuplicateEmail.csv";
+		String fileAbsolutePath = "C:\\Users\\QA.User\\Desktop\\CSV_All_Files\\UploadCSV-DuplicateEmail.csv";
+		//String fileAbsolutePath = "https://github.com/MujahidPX/ReceiveAutomation/blob/master/CSV-Files/CSV_All_Files/UploadCSV-DuplicateEmail.csv";
 		StringSelection clipBoardPath = new StringSelection(fileAbsolutePath);
 		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(clipBoardPath, null);
 
