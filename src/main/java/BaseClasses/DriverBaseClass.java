@@ -176,7 +176,7 @@ public class DriverBaseClass {
 			driver.manage().window().maximize();
 			*/
 			
-			
+			/*
 			// Headless Mode
 			WebDriverManager.chromedriver().setup();
 			ChromeOptions chromeOptions = new ChromeOptions();
@@ -185,7 +185,7 @@ public class DriverBaseClass {
 			driver = new ChromeDriver(chromeOptions); 
 			driver.manage().window().maximize();
 			//siteActions.navigateURL(GlobalVariables.qa_Url);
-			
+			*/
 			
 			//WebDriverManager.chromedriver().setup();
 			//driver = new ChromeDriver();
@@ -211,11 +211,11 @@ public class DriverBaseClass {
 			*/
 			
 
-			/*
-			driver = DriverBaseClass.chrome_driver();
+			
+			driver = chrome_driver();
 			driver = new ChromeDriver();
 			driver.manage().window().maximize();
-			*/
+			
 			
 			//driver = DriverBaseClass.firefox_driver();
 			//driver = new FirefoxDriver();

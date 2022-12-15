@@ -23,7 +23,7 @@
           <include name="initPageObjectClass"/>
           <include name="initDriver"/>
           <include name="tearDown"/>
-          <include name="PreviewCustomize" invocation-numbers="0 0"/>
+          <include name="PreviewCustomize"/>
           <include name="initPageObjectClass1"/>
           <include name="onFinish"/>
           <include name="initPageObjectClass5"/>
